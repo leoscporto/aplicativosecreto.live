@@ -27,20 +27,38 @@
       }
     </style>
     
-    <script>
-    var urlBackRedirect = 'https://aplicativosecreto.live/b'; // lembre-se de usar a url sem espaços
-    // não altere nada abaixo dessa linha
-    urlBackRedirect = urlBackRedirect = urlBackRedirect.trim() +
-            (urlBackRedirect.indexOf("?") > 0 ? '&' : '?') +
-            document.location.search.replace('?', '').toString();
-    history.pushState({}, "", location.href);
-    history.pushState({}, "", location.href);
-    window.onpopstate = function () {
-        setTimeout(function () {
-            location.href = urlBackRedirect;
-        }, 1);
-    };
-    </script>
+    
+    <script type="text/javascript">
+  var query = location.search.slice(1);
+  var back_redirect_back_link = 'https://aplicativosecreto.live/b';
+  
+  if (query) {
+    var queries = query.split("&");
+    var updatedQueries = [];
+    for (var i = 0; i < queries.length; i++) {
+      if (queries[i].startsWith("utm_perfect")) {
+        updatedQueries.push("utm_perfect=BackRedirect");
+      } else {
+        updatedQueries.push(queries[i]);
+      }
+    }
+    back_redirect_back_link += '?' + updatedQueries.join("&");
+  } else {
+    back_redirect_back_link += '?utm_perfect=BackRedirect';
+  }
+
+  history.pushState({},"",location.href);
+  history.pushState({},"",location.href);
+
+  window.onpopstate = function(){
+    setTimeout(function () {
+      location.href = back_redirect_back_link;
+    },1);
+  };
+
+</script>
+    
+   
     
    <!-- Taboola Pixel Code -->
 <script type='text/javascript'>
