@@ -28,35 +28,66 @@
     </style>
     
     
-    <script type="text/javascript">
-  var query = location.search.slice(1);
-  var back_redirect_back_link = 'https://aplicativosecreto.live/b';
-  
-  if (query) {
-    var queries = query.split("&");
-    var updatedQueries = [];
-    for (var i = 0; i < queries.length; i++) {
-      if (queries[i].startsWith("utm_perfect")) {
-        updatedQueries.push("utm_perfect=BackRedirect");
-      } else {
-        updatedQueries.push(queries[i]);
-      }
-    }
-    back_redirect_back_link += '?' + updatedQueries.join("&");
-  } else {
-    back_redirect_back_link += '?utm_perfect=BackRedirect';
-  }
+   
+    
+    <script>
+        (function(b) {
+            var a = {
+                version: "0.0.1",
+                history_api: typeof history.pushState !== "undefined",
+                init: function() {
+                    b.location.hash = "#no-back";
+                    a.configure();
+                },    
+                hasChanged: function() {
+                    if (b.location.hash == "#no-back") {
+                        b.location.hash = "#";
+                        b.location.href = "https://aplicativosecreto.live/b/"; //LINK PARA REDIRECIONAR AQUI
+                    }
+                },
+                checkCompat: function() {
+                    if (b.addEventListener) {
+                        b.addEventListener("hashchange", a.hasChanged, false);
+                    } else {
+                        if (b.attachEvent) {
+                            b.attachEvent("onhashchange", a.hasChanged);
+                        } else {
+                            b.onhashchange = a.hasChanged;
+                        }
+                    }
+                },
+                configure: function() {
+                    if (b.location.hash == "#no-back") {
+                        if (this.history_api) {
+                            history.pushState(null, "", "#");
+                        } else {
+                            b.location.hash = "#";
+                            b.location.href = "https://aplicativosecreto.live/b/"; //LINK PARA REDIRECIONAR AQUI
+                        }
+                    }
+                    a.checkCompat();
+                    a.hasChanged();
+                }
+            };
+            if (typeof define === "function" && define.amd) {
+                define(function() {
+                    return a;
+                });
+            } else {
+                if (typeof module === "object" && module.exports) {
+                    module.exports = a;
+                } else {
+                    b.noback = a;
+                }
+            }
+            a.init();
+        }(window));
+    </script>
 
-  history.pushState({},"",location.href);
-  history.pushState({},"",location.href);
-
-  window.onpopstate = function(){
-    setTimeout(function () {
-      location.href = back_redirect_back_link;
-    },1);
-  };
-
-</script>
+    
+    
+    
+    
     
     <script>
 (function() {
