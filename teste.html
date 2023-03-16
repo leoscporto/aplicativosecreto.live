@@ -218,7 +218,7 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
          
             
             
-           <!-- Div que contém o GIF -->
+          <!-- Div que contém o GIF -->
 <div id="gif-container">
     <img id="gif"
                           src="./assets/img/2023-03-16-18-06-17.gif" />
@@ -236,7 +236,7 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
     const header = document.getElementById("header");
     
     // Adiciona o evento "onended" ao elemento de GIF
-    gif.addEventListener("onended", function() {
+    gif.addEventListener("ended", function() {
         // Atualiza o layout da página após o primeiro ciclo do GIF
         header.textContent = "Parabéns. Você ganhou R$200 REAIS!";
         const paragrafo = document.createElement("p");
