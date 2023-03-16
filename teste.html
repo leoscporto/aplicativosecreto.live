@@ -235,20 +235,26 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
     const gif = document.getElementById("gif");
     const header = document.getElementById("header");
     
-    // Adiciona o evento "onended" ao elemento de GIF
+    // Define a variável "gifOriginal" para o caminho do GIF original
+    const gifOriginal = "caminho/para/o/gif-original.gif";
+    
+    // Adiciona o evento "ended" ao elemento de GIF
     gif.addEventListener("ended", function() {
-        // Atualiza o layout da página após o primeiro ciclo do GIF
-        header.textContent = "Parabéns. Você ganhou R$200 REAIS!";
-        const paragrafo = document.createElement("p");
-        paragrafo.textContent = "Para sacar seu dinheiro, clique no botão abaixo e converse com nossa gerente pelo whatsapp.";
-        document.body.appendChild(paragrafo);
-        const botaoSaque = document.createElement("button");
-        botaoSaque.textContent = "Clique e saque seu dinheiro";
-        botaoSaque.style.backgroundColor = "green";
-        botaoSaque.addEventListener("click", function() {
-            // Adicionar ação do botão de saque aqui
-        });
-        document.body.appendChild(botaoSaque);
+        // Verifica se o GIF atual é o original ou o novo GIF
+        if (gif.getAttribute("src") === gifOriginal) {
+            // Atualiza o layout da página após o primeiro ciclo do GIF original
+            header.textContent = "Parabéns. Você ganhou R$200 REAIS!";
+            const paragrafo = document.createElement("p");
+            paragrafo.textContent = "Para sacar seu dinheiro, clique no botão abaixo e converse com nossa gerente pelo whatsapp.";
+            document.body.appendChild(paragrafo);
+            const botaoSaque = document.createElement("button");
+            botaoSaque.textContent = "Clique e saque seu dinheiro";
+            botaoSaque.style.backgroundColor = "green";
+            botaoSaque.addEventListener("click", function() {
+                // Adicionar ação do botão de saque aqui
+            });
+            document.body.appendChild(botaoSaque);
+        }
     });
 
     // Adiciona o evento de click ao botão
@@ -257,6 +263,7 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
         gif.setAttribute("src", "./assets/img/2023-03-16-18-06-54.gif");
     });
 </script>
+
 
 
 
