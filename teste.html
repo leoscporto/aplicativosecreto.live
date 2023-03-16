@@ -222,39 +222,38 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
               
               
               
- <div><img id="gif"
-                          src="./assets/img/2023-03-16-18-06-17.gif" alt="GIF"  </div> 
+ <!DOCTYPE html>
 
-  <div>
-    <button id="trocarVideo">Trocar para vídeo</button>
-  </div>
-
-  <div id="videoContainer" style="display:none;">
-    <div id="vid_640c01b394170900090b4c26" style="position:relative;width:100%;padding: 56.25% 0 0;">
-      <img id="thumb_640c01b394170900090b4c26" src="https://images.converteai.net/2904f3fd-cb57-435e-b817-386e90503c72/players/640c01b394170900090b4c26/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;">
-      <div id="backdrop_640c01b394170900090b4c26" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div>
+    <div id="gif-container">
+      <img id="gif"
+                          src="./assets/img/2023-03-16-18-06-17.gif" alt="GIF">
     </div>
-    <script type="text/javascript" id="scr_640c01b394170900090b4c26">
-      var s=document.createElement("script");
-      s.src="https://scripts.converteai.net/2904f3fd-cb57-435e-b817-386e90503c72/players/640c01b394170900090b4c26/player.js";
-      s.async=!0;
-      document.head.appendChild(s);
-    </script>
-  </div>
-   
-  <script>
-    const gif = document.getElementById("gif");
-    const video = document.getElementById("video");
-    const botao = document.getElementById("trocarVideo");
+    <div id="video-container" style="display:none">
+      <div id="player"></div>
+    </div>
+    <button id="trocar">Trocar para vídeo</button>
 
-    botao.addEventListener("click", function() {
-      gif.style.display = "none";
-      video.style.display = "block";
-      video.play();
-    });
-  </script>
-</body>
-</html>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      // código para trocar o gif pelo vídeo
+      $('#trocar').click(function() {
+        $('#gif-container').hide();
+        $('#video-container').show();
+
+        // indexar o vídeo
+        var videoId = "640c01b394170900090b4c26";
+        var videoHtml = '<div id="vid_' + videoId + '" style="position:relative;width:100%;padding:56.25% 0 0;">' +
+          '<img id="thumb_' + videoId + '" src="https://images.converteai.net/2904f3fd-cb57-435e-b817-386e90503c72/players/' + videoId + '/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;">' +
+          '<div id="backdrop_' + videoId + '" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div>' +
+          '</div>' +
+          '<script type="text/javascript" id="scr_' + videoId + '">var s=document.createElement("script");s.src="https://scripts.converteai.net/2904f3fd-cb57-435e-b817-386e90503c72/players/' + videoId + '/player.js",s.async=!0,document.getElementById("player").appendChild(s);</script>';
+
+        $('#player').html(videoHtml);
+      });
+    </script>
+  </body>
+
+
             
             <!-- Botão 1 -->
             <div id="cta1" class="mt-4 d-none">
