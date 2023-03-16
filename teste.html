@@ -218,35 +218,29 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
          
             
             
-            <!DOCTYPE html>
+           <!-- Div que contém o GIF -->
+<div id="gif-container">
+   <img id="gif"
+                          src="./assets/img/2023-03-16-18-06-17.gif" />
+</div>
 
-  <div>
-    <img id="gif"
-                          src="./assets/img/2023-03-16-18-06-17.gif" alt="GIF" />
-  </div>
+<!-- Div que contém o botão -->
+<div>
+    <button id="trocar-gif">Trocar GIF</button>
+</div>
 
-  <div>
-    <button id="trocarVideo">Trocar para vídeo</button>
-  </div>
-
-  <video id="gifa" style="display:none;">
-    <img id="gifa"
-                          src="./assets/img/2023-03-16-18-06-54.gif" alt="GIFa" />
-  </video>
-
-  <script>
+<script>
+    // Seleciona o botão e o elemento de GIF
+    const botao = document.getElementById("trocar-gif");
     const gif = document.getElementById("gif");
-    const video = document.getElementById("gifa");
-    const botao = document.getElementById("trocarVideo");
 
+    // Adiciona o evento de click ao botão
     botao.addEventListener("click", function() {
-      gif.style.display = "none";
-      gifa.style.display = "block";
-      gifa.play();
+        // Altera o atributo "src" da tag "img" para o caminho do novo GIF
+        gif.setAttribute("src", "2023-03-16-18-06-54.gif");
     });
-  </script>
-</body>
-</html>
+</script>
+
 
 
 
