@@ -218,74 +218,57 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
          
             
             
-          <!-- Div que contém o GIF -->
+         <!-- Div que contém o GIF -->
 <div id="gif-container">
-    <img id="gif"
+  <i <img id="gif"
                           src="./assets/img/2023-03-16-18-06-17.gif" />
 </div>
 
 <!-- Div que contém o botão -->
 <div>
-    <button id="trocar-gif">Trocar GIF</button>
+  <button id="trocar-gif">Trocar GIF</button>
 </div>
 
 <script>
-    // Seleciona o botão, o elemento de GIF e a div do header
-    const botao = document.getElementById("trocar-gif");
-    const gif = document.getElementById("gif");
-    const header = document.getElementById("header");
-    
-    // Define a variável "gifOriginal" para o caminho do GIF original
-    const gifOriginal = "caminho/para/o/gif-original.gif";
-    
-    // Adiciona o evento "ended" ao elemento de GIF
-    gif.addEventListener("ended", function() {
-        // Verifica se o GIF atual é o original ou o novo GIF
-        if (gif.getAttribute("src") === gifOriginal) {
-            // Atualiza o layout da página após o primeiro ciclo do GIF original
-            header.textContent = "Parabéns. Você ganhou R$200 REAIS!";
-            const paragrafo = document.createElement("p");
-            paragrafo.textContent = "Para sacar seu dinheiro, clique no botão abaixo e converse com nossa gerente pelo whatsapp.";
-            document.body.appendChild(paragrafo);
-            const botaoSaque = document.createElement("button");
-            botaoSaque.textContent = "Clique e saque seu dinheiro";
-            botaoSaque.style.backgroundColor = "green";
-            botaoSaque.addEventListener("click", function() {
-                // Adicionar ação do botão de saque aqui
-            });
-            document.body.appendChild(botaoSaque);
-        }
-    });
+  // Seleciona o botão e o elemento de GIF
+  const botao = document.getElementById("trocar-gif");
+  const gif = document.getElementById("gif");
 
-    // Adiciona o evento de click ao botão
-    botao.addEventListener("click", function() {
-        // Altera o atributo "src" da tag "img" para o caminho do novo GIF
-        gif.setAttribute("src", "./assets/img/2023-03-16-18-06-54.gif");
-    });
+  // Adiciona o evento "ended" ao elemento de GIF
+  let isOriginalGif = true;
+  gif.addEventListener("ended", function () {
+    // Verifica se o GIF que terminou de ser executado é o original ou o novo GIF
+    if (isOriginalGif) {
+      // Altera a variável para indicar que o novo GIF está sendo exibido
+      isOriginalGif = false;
+    } else {
+      // Atualiza o layout da página após o primeiro ciclo do novo GIF
+      const header = document.createElement("h1");
+      header.textContent = "Parabéns. Você ganhou R$200 REAIS!";
+      document.body.appendChild(header);
+
+      const paragrafo = document.createElement("p");
+      paragrafo.textContent =
+        "Para sacar seu dinheiro, clique no botão abaixo e converse com nossa gerente pelo whatsapp.";
+      document.body.appendChild(paragrafo);
+
+      const botaoSaque = document.createElement("button");
+      botaoSaque.textContent = "Clique e saque seu dinheiro";
+      botaoSaque.style.backgroundColor = "green";
+      botaoSaque.addEventListener("click", function () {
+        // Adicionar ação do botão de saque aqui
+      });
+      document.body.appendChild(botaoSaque);
+    }
+  });
+
+  // Adiciona o evento de click ao botão
+  botao.addEventListener("click", function () {
+    // Altera o atributo "src" da tag "img" para o caminho do novo GIF
+    gif.setAttribute("src", "./assets/img/2023-03-16-18-06-54.gif");
+  });
 </script>
 
-
-
-
-
-
-              
-              
-              
-
-
-            
-            <!-- Botão 1 -->
-            <div id="cta1" class="mt-4 d-none">
-              <a href="https://go.perfectpay.com.br/PPU38CL5AJ0?&utm_perfect=highbid" class="a-btn" style="text-decoration: none;">
-                <span class="span-btn">QUERO OBTER ACESSO!</span>
-                <span class="span-btn2">(atenção: vagas limitadas)</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
     
    
 
