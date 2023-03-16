@@ -229,20 +229,20 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
     <button id="trocarVideo">Trocar para vídeo</button>
   </div>
 
-  <video id="video" style="display:none;">
-    <img id="gif"
-                          src="./assets/img/2023-03-16-18-06-54.gif" alt="GIF" />
+  <video id="gifa" style="display:none;">
+    <img id="gifa"
+                          src="./assets/img/2023-03-16-18-06-54.gif" alt="GIFa" />
   </video>
 
   <script>
     const gif = document.getElementById("gif");
-    const video = document.getElementById("video");
+    const video = document.getElementById("gifa");
     const botao = document.getElementById("trocarVideo");
 
     botao.addEventListener("click", function() {
       gif.style.display = "none";
-      video.style.display = "block";
-      video.play();
+      gifa.style.display = "block";
+      gifa.play();
     });
   </script>
 </body>
