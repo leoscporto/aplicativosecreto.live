@@ -218,11 +218,7 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
          
             
             
-            
-              
-              
-              
-<!-- Div que contém o GIF -->
+            <!-- Div que contém o GIF -->
 <div id="gif-container">
     <img id="gif"
                           src="./assets/img/2023-03-16-18-06-17.gif" />
@@ -230,28 +226,24 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
 
 <!-- Div que contém o botão -->
 <div>
-    <button id="trocar-video">Trocar para vídeo</button>
+    <button id="trocar-gif">Trocar GIF</button>
 </div>
 
 <script>
-    // Seleciona o botão e o elemento de vídeo
-    const botao = document.getElementById("trocar-video");
-    const video = document.createElement("video");
-    video.setAttribute("src", "2023-03-16 18-06-54 (1).mp4");
-    video.setAttribute("autoplay", "");
+    // Seleciona o botão e o elemento de GIF
+    const botao = document.getElementById("trocar-gif");
+    const gif = document.getElementById("gif");
 
     // Adiciona o evento de click ao botão
     botao.addEventListener("click", function() {
-        // Seleciona o elemento de GIF
-        const gif = document.getElementById("gif");
-        
-        // Remove o elemento de GIF e adiciona o elemento de vídeo
-        const container = document.getElementById("gif-container");
-        container.removeChild(gif);
-        container.appendChild(video);
+        // Altera o atributo "src" da tag "img" para o caminho do novo GIF
+        gif.setAttribute("src", "2023-03-16-18-06-54.gif");
     });
 </script>
 
+              
+              
+              
 
 
             
