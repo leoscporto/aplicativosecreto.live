@@ -220,104 +220,28 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
 		  
 		  
       
+ <!-- Div que contém o GIF -->
+<div id="gif-container">
+   <img id="gif"
+                          src="./assets/img/2023-03-16-18-06-17.gif" />
+</div>
 
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Gif e layout trocando</title>
-	<style type="text/css">
-		body {
-			margin: 0;
-			padding: 0;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			height: 100vh;
-		}
+<!-- Div que contém o botão -->
+<div>
+    <button id="trocar-gif">Trocar GIF</button>
+</div>
 
-		#gif-container {
-			position: relative;
-		}
+<script>
+    // Seleciona o botão e o elemento de GIF
+    const botao = document.getElementById("trocar-gif");
+    const gif = document.getElementById("gif");
 
-		#gif-container img {
-			display: block;
-			width: 100%;
-			height: auto;
-		}
-
-		#button-container {
-			display: none;
-			margin-top: 20px;
-		}
-
-		#congrats-container {
-			display: none;
-			flex-direction: column;
-			align-items: center;
-			text-align: center;
-			margin-top: 50px;
-		}
-
-		h1 {
-			font-size: 32px;
-			margin-bottom: 10px;
-		}
-
-		p {
-			font-size: 20px;
-			margin-bottom: 20px;
-		}
-
-		button {
-			padding: 10px 20px;
-			font-size: 18px;
-			border: none;
-			border-radius: 5px;
-			background-color: green;
-			color: #fff;
-			cursor: pointer;
-		}
-	</style>
-</head>
-<body>
-
-	<div id="gif-container">
-		<img src="./assets/img/2023-03-16-18-06-17.gif" alt="gif1">
-	</div>
-
-	<div id="button-container">
-		<button onclick="changeGif()">Trocar gif</button>
-	</div>
-
-	<div id="congrats-container">
-		<h1>Parabéns! Você ganhou R$ 200,00!</h1>
-		<p>Para sacar seu dinheiro, clique no botão abaixo e converse com nossa gerente pelo whatsapp.</p>
-		<button>CLIQUE E SAQUE SEU DINHEIRO</button>
-	</div>
-
-	<script type="text/javascript">
-		const gifContainer = document.getElementById("gif-container");
-		const buttonContainer = document.getElementById("button-container");
-		const congratsContainer = document.getElementById("congrats-container");
-
-		let gifIndex = 1;
-
-		function changeGif() {
-			if (gifIndex === 1) {
-				gifContainer.innerHTML = '<img src="./assets/img/2023-03-16-18-06-54.gif" alt="gif2">';
-				gifIndex = 2;
-			} else {
-				gifContainer.style.display = "none";
-				buttonContainer.style.display = "none";
-				congratsContainer.style.display = "flex";
-			}
-		}
-	</script>
-
-</body>
-</html>
-
+    // Adiciona o evento de click ao botão
+    botao.addEventListener("click", function() {
+        // Altera o atributo "src" da tag "img" para o caminho do novo GIF
+        gif.setAttribute("src", "./assets/img/2023-03-16-18-06-54.gif");
+    });
+</script>
 
 
     
