@@ -272,16 +272,21 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
         gif.setAttribute("src", "./assets/img/2023-03-16 18-06-54 (1) (1).mp4");
     });
 
-    // Adiciona o evento de fim de reprodução do vídeo
-    video.addEventListener('ended', function() {
-        // Esconde o vídeo e exibe o título e o parágrafo
-        videoContainer.style.display = "none";
-        finalContainer.style.display = "block";
-    });
-	  // Esconde as linhas de código
+   // Adiciona o evento de fim de reprodução do vídeo
+video.addEventListener('ended', function() {
+    // Esconde o vídeo e exibe o título e o parágrafo
+    videoContainer.style.display = "none";
+    finalContainer.style.display = "block";
+    
+    // Esconde as linhas de código
     document.querySelector('h3.my-4').style.display = "none";
     document.querySelector('p').style.display = "none";
+    
+    // Exibe o botão novamente
+    botao.style.display = "block";
 });
+
+	 
    
 	
 </script>
@@ -290,7 +295,7 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
 
 		  <p> <p>
 	<div>
-		 <p><b> Clique no botão acima e descubra quanto dinheiro você ganhou!</b></p>
+		 <p><b> Clique no botão acima e descubra quanto dinheiro você ganhou!a</b></p>
 		
 		  </div>
 		  
