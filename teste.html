@@ -295,29 +295,30 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
   <div class="chat-title">Chat</div>
   <div class="chat-messages">
     <div class="message">
-      <img src="./assets/img/comentarios/user1.jpg" alt="Foto de perfil de Sarah" class="profile-pic">
-      <div class="message-content">Adorei essa ideia! Vou experimentar em breve.</div>
-    </div>
-    <div class="message">
-      <img src="./assets/img/comentarios/user2.jpg" alt="Foto de perfil de John" class="profile-pic">
-      <div class="message-content">Funcionou perfeitamente para mim. Obrigado!</div>
-    </div>
-    <div class="message">
-      <img src="./assets/img/comentarios/user3.jpg" alt="Foto de perfil de Emily" class="profile-pic">
-      <div class="message-content">Estou amando os resultados. Não pare de postar essas dicas incríveis!</div>
-    </div>
-    <div class="message">
-      <img src="./assets/img/comentarios/user4.jpg" alt="Foto de perfil de Mike" class="profile-pic">
-      <div class="message-content"></div>
-    </div>
-    <div class="message">
-      <img src="./assets/img/comentarios/user5.jpg" alt="Foto de perfil de Jessica" class="profile-pic">
-      <div class="message-content"></div>
-    </div>
-    <div class="message">
-      <img src="./assets/img/comentarios/user6.jpg" alt="Foto de perfil de David" class="profile-pic">
-      <div class="message-content"></div>
-    </div>
+  <img src="./assets/img/comentarios/user1.jpg" alt="Foto de perfil de Sarah" class="profile-pic">
+  <div class="message-content">Adorei essa ideia! Vou experimentar em breve.</div>
+</div>
+<div class="message">
+  <img src="./assets/img/comentarios/user2.jpg" alt="Foto de perfil de John" class="profile-pic">
+  <div class="message-content">Funcionou perfeitamente para mim. Obrigado!</div>
+</div>
+<div class="message">
+  <img src="./assets/img/comentarios/user3.jpg" alt="Foto de perfil de Emily" class="profile-pic">
+  <div class="message-content delay-3s">Estou amando os resultados. Não pare de postar essas dicas incríveis!</div>
+</div>
+<div class="message">
+  <img src="./assets/img/comentarios/user4.jpg" alt="Foto de perfil de Mike" class="profile-pic">
+  <div class="message-content delay-6s">Nunca pensei que seria tão fácil. Obrigado por compartilhar!</div>
+</div>
+<div class="message">
+  <img src="./assets/img/comentarios/user5.jpg" alt="Foto de perfil de Jessica" class="profile-pic">
+  <div class="message-content delay-9s">Já estou vendo uma grande diferença. Incrível!</div>
+</div>
+<div class="message">
+  <img src="./assets/img/comentarios/user6.jpg" alt="Foto de perfil de David" class="profile-pic">
+  <div class="message-content">Muito útil! Obrigado por compartilhar seus conhecimentos.</div>
+</div>
+
   </div>
   <div class="chat-input">
     <div class="fake-input">
@@ -375,19 +376,46 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
   padding: 10px;
   border-radius: 0;
 }
-</style>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    let messages = document.querySelectorAll('.message-content');
-    let delay = 1000;
+.delay-3s {
+  animation-delay: 3s;
+}
 
-    for (let i = 3; i < messages.length; i++) {
-      messages[i].style.opacity = '0';
-      setTimeout(function() {
-        messages[i].style.opacity = '1';
-      }, delay * (i - 2));   messages[i].textContent = "Mensagem falsa " + (i - 2); // Adicione essa linha para gerar as mensagens falsas
-} 
+.delay-6s {
+  animation-delay: 6s;
+}
+
+.delay-9s {
+  animation-delay: 9s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.message:nth-last-child(-n+3) {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.message:nth-last-child(-n+3).delay-3s {
+  animation-delay: 3s;
+}
+
+.message:nth-last-child(-n+3).delay-6s {
+  animation-delay: 6s;
+}
+
+.message:nth-last-child(-n+3).delay-9s {
+  animation-delay: 9s;
+}
+</div>
 
 
   
