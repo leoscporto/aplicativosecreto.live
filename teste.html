@@ -219,10 +219,12 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
 		  
 		  
       
- <!-- Div que contém o GIF -->
-<div id="gif-container">
-   <video id="video" width="320" height="240" controls="controls" autoplay="autoplay">
-      <source id="video-source" src="./assets/img/2023-03-16-18-06-17.gif" type="video/mp4">
+ <!-- Div que contém o GIF e o vídeo -->
+<div id="gif-video-container">
+   <img id="gif"
+        src="./assets/img/2023-03-16-18-06-17.gif" />
+   <video id="video" width="320" height="240" controls="controls" autoplay="autoplay" style="display: none;">
+      <source id="video-source" src="./assets/img/2023-03-16 18-06-54 (1) (1).mp4" type="video/mp4">
    </video>
 </div>
 
@@ -232,19 +234,22 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
 </div>
 
 <script>
-    // Seleciona o botão e o elemento de vídeo e source
+    // Seleciona o botão e os elementos de GIF e vídeo
     const botao = document.getElementById("trocar-video");
+    const gif = document.getElementById("gif");
     const video = document.getElementById("video");
     const source = document.getElementById("video-source");
 
     // Adiciona o evento de click ao botão
     botao.addEventListener("click", function() {
-        // Altera o atributo "src" da tag "source" para o caminho do novo vídeo
-        source.setAttribute("src", "./assets/img/2023-03-16 18-06-54 (1) (1).mp4");
+        // Altera o estilo do GIF e do vídeo
+        gif.style.display = "none";
+        video.style.display = "block";
         // Recarrega o vídeo
         video.load();
     });
 </script>
+
 
 
 
