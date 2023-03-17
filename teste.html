@@ -396,7 +396,25 @@ messages.slice(0, 3).forEach((message) => {
 
 // Adiciona as próximas três mensagens com delay
 setTimeout(() => {
-  messages.slice(3, 6).forEach((message) => {
+  messages.slice(3).forEach((message) => {
+    const chatMessage = createChatMessage(message);
+    chatBox.appendChild(chatMessage);
+  });
+}, 3000);
+			 setTimeout(() => {
+  messages.slice(4).forEach((message) => {
+    const chatMessage = createChatMessage(message);
+    chatBox.appendChild(chatMessage);
+  });
+}, 3000);
+			 setTimeout(() => {
+  messages.slice(5).forEach((message) => {
+    const chatMessage = createChatMessage(message);
+    chatBox.appendChild(chatMessage);
+  });
+}, 3000);
+			 setTimeout(() => {
+  messages.slice(6).forEach((message) => {
     const chatMessage = createChatMessage(message);
     chatBox.appendChild(chatMessage);
   });
