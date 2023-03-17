@@ -293,32 +293,7 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
 		  
 		<div class="chat">
   <div class="chat-title">Chat ao vivo de membros</div>
-  <div class="chat-messages">
-    <div class="message">
-      <img src="./assets/img/comentarios/user1.jpg" alt="Foto de perfil de Sarah" class="profile-pic">
-      <div class="message-content">Adorei essa ideia! Vou experimentar em breve.</div>
-    </div>
-    <div class="message">
-      <img src="./assets/img/comentarios/user2.jpg" alt="Foto de perfil de John" class="profile-pic">
-      <div class="message-content">Funcionou perfeitamente para mim. Obrigado!</div>
-    </div>
-    <div class="message">
-      <img src="./assets/img/comentarios/user3.jpg" alt="Foto de perfil de Emily" class="profile-pic">
-      <div class="message-content">Estou amando os resultados. Não pare de postar essas dicas incríveis!</div>
-    </div>
-    <div class="message">
-      <img src="./assets/img/comentarios/user4.jpg" alt="Foto de perfil de Mike" class="profile-pic">
-      <div class="message-content">Nunca pensei que seria tão fácil. Obrigado por compartilhar!</div>
-    </div>
-    <div class="message">
-      <img src="./assets/img/comentarios/user5.jpg" alt="Foto de perfil de Jessica" class="profile-pic">
-      <div class="message-content">Já estou vendo uma grande diferença. Incrível!</div>
-    </div>
-    <div class="message">
-      <img src="./assets/img/comentarios/user6.jpg" alt="Foto de perfil de David" class="profile-pic">
-      <div class="message-content">Muito útil! Obrigado por compartilhar seus conhecimentos.</div>
-    </div>
-  </div>
+  <div class="chat-messages"></div>
   <div class="chat-input">
     <div class="fake-input">
       <p>Mande uma mensagem...</p>
@@ -376,6 +351,50 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
   border-radius: 0;
 }
 </style>
+
+<script>
+// array de mensagens de prova social
+const messages = [
+  { name: "Sarah", avatar: "./assets/img/comentarios/user1.jpg", content: "Adorei essa ideia! Vou experimentar em breve." },
+  { name: "John", avatar: "./assets/img/comentarios/user2.jpg", content: "Funcionou perfeitamente para mim. Obrigado!" },
+  { name: "Emily", avatar: "./assets/img/comentarios/user3.jpg", content: "Estou amando os resultados. Não pare de postar essas dicas incríveis!" },
+  { name: "Mike", avatar: "./assets/img/comentarios/user4.jpg", content: "Nunca pensei que seria tão fácil. Obrigado por compartilhar!" },
+  { name: "Jessica", avatar: "./assets/img/comentarios/user5.jpg", content: "Já estou vendo uma grande diferença. Incrível!" },
+  { name: "David", avatar: "./assets/img/comentarios/user6.jpg", content: "Muito útil! Obrigado por compartilhar seus conhecimentos." }
+];
+
+// função para adicionar mensagem ao chat
+function addMessage(name, avatar, content) {
+  const chatMessages = document.querySelector('.chat-messages');
+  
+  const messageElem = document.createElement('div');
+  messageElem.className = 'message';
+  
+  const avatarElem = document.createElement('img');
+  avatarElem.src = avatar;
+  avatarElem.alt = `Foto de perfil de ${name}`;
+  avatarElem.className = 'profile-pic';
+  
+  const contentElem = document.createElement('div');
+  contentElem.textContent = content;
+  contentElem.className = 'message-content';
+  
+  messageElem.appendChild(avatarElem);
+  messageElem.appendChild(contentElem);
+  
+  chatMessages.appendChild(messageElem);
+}
+
+// função para enviar mensagens de forma aleatória
+function sendRandomMessage() {
+  const message = messages[Math.floor(Math.random() * messages.length)];
+addMessage(message.name, message.avatar, message.content);
+setTimeout(sendRandomMessage, Math.floor(Math.random() * (5000 - 2000 + 1) + 2000));
+}
+
+// iniciar o envio de mensagens aleatórias
+setTimeout(sendRandomMessage, Math.floor(Math.random() * (5000 - 2000 + 1) + 2000));
+</script>
 
 		  
 		  
