@@ -291,10 +291,7 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
 		  
 		  
 		  
-<div class="chat">
-  <div class="chat-title">Chat</div>
-  <div class="chat-messages">
-    <div class="message">
+<div class="message">
       <img src="./assets/img/comentarios/user1.jpg" alt="Foto de perfil de Sarah" class="profile-pic">
       <div class="message-content">Adorei essa ideia! Vou experimentar em breve.</div>
     </div>
@@ -308,15 +305,15 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
     </div>
     <div class="message">
       <img src="./assets/img/comentarios/user4.jpg" alt="Foto de perfil de Mike" class="profile-pic">
-      <div class="message-content"></div>
+      <div class="message-content">Nunca pensei que seria tão fácil. Obrigado por compartilhar!</div>
     </div>
     <div class="message">
       <img src="./assets/img/comentarios/user5.jpg" alt="Foto de perfil de Jessica" class="profile-pic">
-      <div class="message-content"></div>
+      <div class="message-content">Já estou vendo uma grande diferença. Incrível!</div>
     </div>
     <div class="message">
       <img src="./assets/img/comentarios/user6.jpg" alt="Foto de perfil de David" class="profile-pic">
-      <div class="message-content"></div>
+      <div class="message-content">Muito útil! Obrigado por compartilhar seus conhecimentos.</div>
     </div>
   </div>
   <div class="chat-input">
@@ -376,19 +373,6 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
   border-radius: 0;
 }
 </style>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    let messages = document.querySelectorAll('.message-content');
-    let delay = 1000;
-
-    for (let i = 3; i < messages.length; i++) {
-      messages[i].style.opacity = '0';
-      setTimeout(function() {
-        messages[i].style.opacity = '1';
-      }, delay * (i - 2));   messages[i].textContent = "Mensagem falsa " + (i - 2); // Adicione essa linha para gerar as mensagens falsas
-} 
-
 
   
 
