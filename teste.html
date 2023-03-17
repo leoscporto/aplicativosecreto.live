@@ -222,7 +222,8 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
  
 <!-- Div que contém o GIF -->
 <div id="gif-container">
-   <img id="gif" src="./assets/img/2023-03-16-18-06-17.gif" />
+   <img id="gif"
+                          src="./assets/img/2023-03-16-18-06-17.gif" />
 </div>
 
 <!-- Div que contém o botão -->
@@ -230,43 +231,46 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
     <button id="trocar-gif">Trocar GIF</button>
 </div>
 
-<!-- Script -->
+<!-- Div que contém o vídeo -->
+<div id="video-container" style="display:none;">
+    <video id="video" width="320" height="240" controls="controls" autoplay="autoplay">
+        <source src="./assets/img/2023-03-16 18-06-54 (1) (1).mp4" type="video/mp4">
+        <object data="" width="320" height="240">
+            <embed width="320" height="240" src="./assets/img/2023-03-16 18-06-54 (1) (1).mp4">
+        </object>
+    </video>
+</div>
+
+<!-- Div que contém o título e o parágrafo -->
+<div id="final-container" style="display:none;">
+    <h1>Parabéns! Você ganhou R$200 reais!</h1>
+    <p>Para sacar seu dinheiro, clique no botão abaixo e entre em contato com nossa gerente pelo Whatsapp</p>
+    <button id="contato-whatsapp">Contato pelo Whatsapp</button>
+</div>
+
 <script>
-    // Seleciona o botão e o elemento de GIF
+    // Seleciona o botão, o elemento de GIF e o elemento de vídeo
     const botao = document.getElementById("trocar-gif");
     const gif = document.getElementById("gif");
-    const video = document.createElement('video');
-    video.width = "320";
-    video.height = "240";
-    video.controls = "controls";
-    video.style.display = "none";
-    const source = document.createElement('source');
-    source.src = "./assets/img/2023-03-16 18-06-54 (1) (1).mp4";
-    source.type = "video/mp4";
-    video.appendChild(source);
-    document.body.appendChild(video);
+    const videoContainer = document.getElementById("video-container");
+    const finalContainer = document.getElementById("final-container");
+    const video = document.getElementById("video");
 
     // Adiciona o evento de click ao botão
     botao.addEventListener("click", function() {
-        // Altera o elemento exibido (gif ou vídeo)
-        if (gif.style.display !== "none") {
-            gif.style.display = "none";
-            video.style.display = "block";
-            video.play();
-        } else {
-            video.style.display = "none";
-            const mensagem = document.createElement('div');
-            mensagem.innerHTML = "<h1>Parabéns! Você ganhou R$200 reais!</h1><p>Para sacar seu dinheiro, clique no botão abaixo e entre em contato com nossa gerente pelo Whatsapp</p>";
-            const botaoWhatsapp = document.createElement('button');
-            botaoWhatsapp.innerText = "Entrar em contato";
-            botaoWhatsapp.style.backgroundColor = "green";
-            botaoWhatsapp.style.color = "white";
-            botaoWhatsapp.addEventListener("click", function() {
-                window.location.href = "https://api.whatsapp.com/send?phone=5598985061888";
-            });
-            mensagem.appendChild(botaoWhatsapp);
-            document.body.appendChild(mensagem);
-        }
+        // Esconde o GIF e exibe o vídeo
+        gif.style.display = "none";
+        videoContainer.style.display = "block";
+
+        // Altera o atributo "src" da tag "img" para a URL do vídeo
+        gif.setAttribute("src", "./assets/img/2023-03-16 18-06-54 (1) (1).mp4");
+    });
+
+    // Adiciona o evento de fim de reprodução do vídeo
+    video.addEventListener('ended', function() {
+        // Esconde o vídeo e exibe o título e o parágrafo
+        videoContainer.style.display = "none";
+        finalContainer.style.display = "block";
     });
 </script>
 
