@@ -278,77 +278,103 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
 
 
 		  
+		  <style>
+  .chat {
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 500px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .message {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+  }
+  .message img {
+    flex-basis: 20%;
+    flex-grow: 0;
+    margin-right: 10px;
+  }
+  .message-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 80%;
+  }
+  .message-text h4 {
+    margin: 0;
+  }
+  .message-text p {
+    margin: 0;
+  }
+  .chat-input {
+    background-color: gray;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+</style>
 		  
-		  
-		  <div class="chat-box">
-  <div class="chat-title">Chat ao vivo de membros</div>
-  <div class="chat-messages">
+		  <div class="chat-container">
+  <div class="chat-title">
+    <h3>Chat ao vivo de membros</h3>
+  </div>
+  <div class="chat-box">
     <div class="chat-message">
-      <img src="./assets/img/comentarios/user1.jpg" alt="Foto de perfil do usuário 1">
-      <div class="chat-message-text">Ótimo produto! Recomendo a todos.</div>
+      <div class="message-content">
+        <h4>Lucas</h4>
+        <img src="./assets/img/comentarios/user1.jpg" alt="Imagem do usuário" class="message-image">
+        <p>Ótimo produto, recomendo!</p>
+      </div>
     </div>
     <div class="chat-message">
-      <img src="./assets/img/comentarios/user2.jpg" alt="Foto de perfil do usuário 2">
-      <div class="chat-message-text">Entrega rápida e produto de qualidade.</div>
+      <div class="message-content">
+        <h4>Amanda</h4>
+        <img src="./assets/img/comentarios/user2.jpg" alt="Imagem do usuário" class="message-image">
+        <p>Entrega rápida e produto de qualidade!</p>
+      </div>
     </div>
     <div class="chat-message">
-      <img src="./assets/img/comentarios/user3.jpg" alt="Foto de perfil do usuário 3">
-      <div class="chat-message-text">Adorei o atendimento ao cliente. Muito prestativos.</div>
+      <div class="message-content">
+        <h4>João</h4>
+        <img src="./assets/img/comentarios/user3.jpg" alt="Imagem do usuário" class="message-image">
+        <p>Gostei muito do atendimento, equipe muito prestativa.</p>
+      </div>
+    </div>
+    <div class="chat-message hidden-message" id="message-4">
+      <div class="message-content">
+        <h4>Pedro</h4>
+        <img src="./assets/img/comentarios/user4.jpg" alt="Imagem do usuário" class="message-image">
+        <p>Produto de qualidade e com preço justo.</p>
+      </div>
+    </div>
+    <div class="chat-message hidden-message" id="message-5">
+      <div class="message-content">
+        <h4>Maria</h4>
+        <img src="./assets/img/comentarios/user5.jpg" alt="Imagem do usuário" class="message-image">
+        <p>Atendimento excelente, recomendo!</p>
+      </div>
+    </div>
+    <div class="chat-message hidden-message" id="message-6">
+      <div class="message-content">
+        <h4>Carlos</h4>
+        <img src="./assets/img/comentarios/user6.jpg" alt="Imagem do usuário" class="message-image">
+        <p>Produto de qualidade e com preço acessível.</p>
+      </div>
     </div>
   </div>
-  <div class="chat-input">
-    <div class="chat-input-text">Mande uma mensagem...</div>
+  <div class="chat-footer">
+    <div class="fake-space">
+      <p>Mande uma mensagem...</p>
+    </div>
   </div>
 </div>
 
-<style>	
-	.chat-box {
-  border: 1px solid #000;
-  border-radius: 5px;
-  padding: 10px;
-  height: 400px;
-  overflow-y: scroll;
-}
 
-.chat-title {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.chat-message {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.chat-message img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-.chat-message-text {
-  background-color: #eee;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-.chat-input {
-  margin-top: 10px;
-  display: flex;
-  align-items: center;
-}
-
-.chat-input-text {
-  flex: 1;
-  background-color: #eee;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: text;
-}
-		  </style>
 		 <script>
 			
 // Cria uma mensagem do chat com nome de usuário, imagem e texto
