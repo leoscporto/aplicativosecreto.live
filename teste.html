@@ -228,27 +228,45 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
    </video>
 </div>
 
-<!-- Div que contém o botão -->
-<div>
-    <button id="trocar-video">Trocar Vídeo</button>
+<!-- Div que contém as informações de parabéns e o botão -->
+<div id="parabens-container" style="display: none;">
+    <h2>Parabéns! Você ganhou R$200 reais!</h2>
+    <p>Para sacar seu dinheiro, clique no botão abaixo e entre em contato com nossa gerente pelo Whatsapp</p>
+    <button id="sacar-dinheiro">Sacar dinheiro</button>
 </div>
 
 <script>
-    // Seleciona o botão e os elementos de GIF e vídeo
+    // Seleciona o botão, o elemento de GIF, o elemento de vídeo e source e o elemento de informações de parabéns
     const botao = document.getElementById("trocar-video");
     const gif = document.getElementById("gif");
     const video = document.getElementById("video");
     const source = document.getElementById("video-source");
+    const parabens = document.getElementById("parabens-container");
+    const sacarDinheiro = document.getElementById("sacar-dinheiro");
 
-    // Adiciona o evento de click ao botão
+    // Adiciona o evento de clique ao botão
     botao.addEventListener("click", function() {
         // Altera o estilo do GIF e do vídeo
         gif.style.display = "none";
         video.style.display = "block";
         // Recarrega o vídeo
         video.load();
+
+        // Adiciona o evento "ended" para detectar quando o vídeo termina
+        video.addEventListener("ended", function() {
+            // Altera o estilo do vídeo e exibe as informações de parabéns e o botão
+            video.style.display = "none";
+            parabens.style.display = "block";
+        });
+    });
+
+    // Adiciona o evento de clique ao botão de sacar dinheiro
+    sacarDinheiro.addEventListener("click", function() {
+        // Redireciona para o Whatsapp
+        window.location.href = "https://wa.me/SEUNUMERODERECERBA/$200";
     });
 </script>
+
 
 
 
