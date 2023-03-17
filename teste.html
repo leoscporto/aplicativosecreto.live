@@ -218,56 +218,36 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
          
             
             
-         <!-- Div que contém o GIF -->
-<div id="gif-container">
-  <img id="gif"
-                          src="./assets/img/2023-03-16-18-06-17.gif" />
-</div>
+         <!DOCTYPE html>
+<html>
+<head>
+	<title>Exemplo de mudança de layout após ciclo de GIF</title>
+	<script type="text/javascript">
+		function trocarLayout() {
+			document.getElementById("gif").src = "./assets/img/2023-03-16-18-06-54.gif";
+			document.getElementById("gif").addEventListener("ended", function() {
+				document.getElementById("titulo").innerHTML = "Parabéns! Você ganhou R$200 REAIS!";
+				document.getElementById("mensagem").innerHTML = "Para sacar seu dinheiro, clique no botão abaixo e converse com nossa gerente pelo WhatsApp";
+				document.getElementById("botao").style.display = "block";
+			});
+		}
+	</script>
+</head>
+<body>
+	<div>
+		<img id="gif" src="./assets/img/2023-03-16-18-06-17.gif" autoplay="autoplay" loop="loop">
+	</div>
+	<div>
+		<button onclick="trocarLayout()">Trocar GIF</button>
+	</div>
+	<div>
+		<h1 id="titulo"></h1>
+		<p id="mensagem"></p>
+		<button id="botao" style="display:none">Clique e saque seu dinheiro</button>
+	</div>
+</body>
+</html>
 
-<!-- Div que contém o botão -->
-<div>
-  <button id="trocar-gif">Trocar GIF</button>
-</div>
-
-<script>
-  // Seleciona o botão e o elemento de GIF
-  const botao = document.getElementById("trocar-gif");
-  const gif = document.getElementById("gif");
-
-  // Adiciona o evento "ended" ao elemento de GIF
-  let isOriginalGif = true;
-  gif.addEventListener("ended", function () {
-    // Verifica se o GIF que terminou de ser executado é o original ou o novo GIF
-    if (isOriginalGif) {
-      // Altera a variável para indicar que o novo GIF está sendo exibido
-      isOriginalGif = false;
-    } else {
-      // Atualiza o layout da página após o primeiro ciclo do novo GIF
-      const header = document.createElement("h1");
-      header.textContent = "Parabéns. Você ganhou R$200 REAIS!";
-      document.body.appendChild(header);
-
-      const paragrafo = document.createElement("p");
-      paragrafo.textContent =
-        "Para sacar seu dinheiro, clique no botão abaixo e converse com nossa gerente pelo whatsapp.";
-      document.body.appendChild(paragrafo);
-
-      const botaoSaque = document.createElement("button");
-      botaoSaque.textContent = "Clique e saque seu dinheiro";
-      botaoSaque.style.backgroundColor = "green";
-      botaoSaque.addEventListener("click", function () {
-        // Adicionar ação do botão de saque aqui
-      });
-      document.body.appendChild(botaoSaque);
-    }
-  });
-
-  // Adiciona o evento de click ao botão
-  botao.addEventListener("click", function () {
-    // Altera o atributo "src" da tag "img" para o caminho do novo GIF
-    gif.setAttribute("src", "./assets/img/2023-03-16-18-06-54.gif");
-  });
-</script>
 
     
    
