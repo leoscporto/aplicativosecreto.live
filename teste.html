@@ -278,102 +278,114 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
 
 
 		  
-		  <style>
-  .chat {
-    border: 2px solid black;
-    border-radius: 10px;
-    height: 500px;
-    overflow-y: scroll;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-  }
-  .message {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 10px;
-  }
-  .message img {
-    flex-basis: 20%;
-    flex-grow: 0;
-    margin-right: 10px;
-  }
-  .message-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-basis: 80%;
-  }
-  .message-text h4 {
-    margin: 0;
-  }
-  .message-text p {
-    margin: 0;
-  }
-  .chat-input {
-    background-color: gray;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-</style>
+		 
 		  
-		  <div class="chat-container">
-  <div class="chat-title">
-    <h3>Chat ao vivo de membros</h3>
-  </div>
+		 <div class="chat-container">
   <div class="chat-box">
-    <div class="chat-message">
-      <div class="message-content">
-        <h4>Lucas</h4>
-        <img src="./assets/img/comentarios/user1.jpg" alt="Imagem do usuário" class="message-image">
-        <p>Ótimo produto, recomendo!</p>
+    <div class="chat-header">
+      <h3>Chat ao vivo de membros</h3>
+    </div>
+    <div class="chat-messages">
+      <div class="chat-message">
+        <div class="profile">
+          <img src="./assets/img/comentarios/user1.jpg">
+        </div>
+        <div class="message">
+          <h4>Lucas</h4>
+          <p>Ótimo produto! Comprei e chegou super rápido, recomendo.</p>
+        </div>
+      </div>
+
+      <div class="chat-message">
+        <div class="profile">
+          <img src="./assets/img/comentarios/user2.jpg">
+        </div>
+        <div class="message">
+          <h4>Ana</h4>
+          <p>Amei a qualidade, já estou querendo comprar mais!</p>
+        </div>
+      </div>
+
+      <div class="chat-message">
+        <div class="profile">
+          <img src="./assets/img/comentarios/user3.jpg">
+        </div>
+        <div class="message">
+          <h4>Renato</h4>
+          <p>Atendimento excelente! Responderam todas as minhas dúvidas.</p>
+        </div>
+      </div>
+
+      <div class="chat-message hidden-message">
+        <div class="profile">
+          <img src="./assets/img/comentarios/user4.jpg">
+        </div>
+        <div class="message">
+          <h4>Julia</h4>
+          <p>Produto chegou bem embalado e em perfeito estado. Amei!</p>
+        </div>
+      </div>
+
+      <div class="chat-message hidden-message">
+        <div class="profile">
+          <img src="./assets/img/comentarios/user5.jpg">
+        </div>
+        <div class="message">
+          <h4>Pedro</h4>
+          <p>Demorou um pouco para chegar, mas valeu a pena esperar.</p>
+        </div>
+      </div>
+
+      <div class="chat-message hidden-message">
+        <div class="profile">
+          <img src="./assets/img/comentarios/user6.jpg">
+        </div>
+        <div class="message">
+          <h4>Carla</h4>
+          <p>Comprei para presente e a pessoa adorou, recomendo muito!</p>
+        </div>
       </div>
     </div>
-    <div class="chat-message">
-      <div class="message-content">
-        <h4>Amanda</h4>
-        <img src="./assets/img/comentarios/user2.jpg" alt="Imagem do usuário" class="message-image">
-        <p>Entrega rápida e produto de qualidade!</p>
+
+    <div class="chat-footer">
+      <div class="input-message">
+        <input type="text" placeholder="Digite aqui sua mensagem...">
+        <button type="submit">Enviar</button>
       </div>
-    </div>
-    <div class="chat-message">
-      <div class="message-content">
-        <h4>João</h4>
-        <img src="./assets/img/comentarios/user3.jpg" alt="Imagem do usuário" class="message-image">
-        <p>Gostei muito do atendimento, equipe muito prestativa.</p>
+      <div class="message-placeholder">
+        <p>Mande uma mensagem...</p>
       </div>
-    </div>
-    <div class="chat-message hidden-message" id="message-4">
-      <div class="message-content">
-        <h4>Pedro</h4>
-        <img src="./assets/img/comentarios/user4.jpg" alt="Imagem do usuário" class="message-image">
-        <p>Produto de qualidade e com preço justo.</p>
-      </div>
-    </div>
-    <div class="chat-message hidden-message" id="message-5">
-      <div class="message-content">
-        <h4>Maria</h4>
-        <img src="./assets/img/comentarios/user5.jpg" alt="Imagem do usuário" class="message-image">
-        <p>Atendimento excelente, recomendo!</p>
-      </div>
-    </div>
-    <div class="chat-message hidden-message" id="message-6">
-      <div class="message-content">
-        <h4>Carlos</h4>
-        <img src="./assets/img/comentarios/user6.jpg" alt="Imagem do usuário" class="message-image">
-        <p>Produto de qualidade e com preço acessível.</p>
-      </div>
-    </div>
-  </div>
-  <div class="chat-footer">
-    <div class="fake-space">
-      <p>Mande uma mensagem...</p>
     </div>
   </div>
 </div>
 
+<style>
+	.chat-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.chat-box {
+  width: 400px;
+  height: 600px;
+  border: 2px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.chat-header {
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.chat-header h3 {
+  margin: 0;
+}
+
+.chat-messages
+</style>
 
 		 <script>
 			
