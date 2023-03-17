@@ -291,46 +291,33 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
 		  
 		  
 		  
-		<div class="chat-messages">
-  <div class="message">
-    <img src="./assets/img/comentarios/user1.jpg" alt="Foto de perfil de Sarah" class="profile-pic">
-    <div class="message-content">Adorei essa ideia! Vou experimentar em breve.</div>
-  </div>
-  <div class="message">
-    <img src="./assets/img/comentarios/user2.jpg" alt="Foto de perfil de John" class="profile-pic">
-    <div class="message-content">Funcionou perfeitamente para mim. Obrigado!</div>
-  </div>
-  <div class="message">
-    <img src="./assets/img/comentarios/user3.jpg" alt="Foto de perfil de Emily" class="profile-pic">
-    <div class="message-content">Estou amando os resultados. Não pare de postar essas dicas incríveis!</div>
-  </div>
-  <div class="message delayed">
-    <img src="./assets/img/comentarios/user4.jpg" alt="Foto de perfil de Mike" class="profile-pic">
-    <div class="message-content">Nunca pensei que seria tão fácil. Obrigado por compartilhar!</div>
-  </div>
-  <div class="message delayed">
-    <img src="./assets/img/comentarios/user5.jpg" alt="Foto de perfil de Jessica" class="profile-pic">
-    <div class="message-content">Já estou vendo uma grande diferença. Incrível!</div>
-  </div>
-  <div class="message delayed">
-    <img src="./assets/img/comentarios/user6.jpg" alt="Foto de perfil de David" class="profile-pic">
-    <div class="message-content">Muito útil! Obrigado por compartilhar seus conhecimentos.</div>
-  </div>
-</div>
-
-   <script>
-  // seleciona todas as mensagens com a classe "delayed"
-  const delayedMessages = document.querySelectorAll('.delayed');
-
-  // itera sobre cada mensagem e adiciona a classe "visible" após um atraso de 3 segundos
-  delayedMessages.forEach((message, index) => {
-    setTimeout(() => {
-      message.classList.add('visible');
-    }, (index + 1) * 3000); // cada mensagem aparece 3 segundos após a anterior
-  });
-</script>
-
-
+		<div class="chat">
+  <div class="chat-title">Chat</div>
+  <div class="chat-messages">
+    <div class="message">
+      <img src="./assets/img/comentarios/user1.jpg" alt="Foto de perfil de Sarah" class="profile-pic">
+      <div class="message-content">Adorei essa ideia! Vou experimentar em breve.</div>
+    </div>
+    <div class="message">
+      <img src="./assets/img/comentarios/user2.jpg" alt="Foto de perfil de John" class="profile-pic">
+      <div class="message-content">Funcionou perfeitamente para mim. Obrigado!</div>
+    </div>
+    <div class="message">
+      <img src="./assets/img/comentarios/user3.jpg" alt="Foto de perfil de Emily" class="profile-pic">
+      <div class="message-content">Estou amando os resultados. Não pare de postar essas dicas incríveis!</div>
+    </div>
+    <div class="message">
+      <img src="./assets/img/comentarios/user4.jpg" alt="Foto de perfil de Mike" class="profile-pic">
+      <div class="message-content"></div>
+    </div>
+    <div class="message">
+      <img src="./assets/img/comentarios/user5.jpg" alt="Foto de perfil de Jessica" class="profile-pic">
+      <div class="message-content"></div>
+    </div>
+    <div class="message">
+      <img src="./assets/img/comentarios/user6.jpg" alt="Foto de perfil de David" class="profile-pic">
+      <div class="message-content"></div>
+    </div>
   </div>
   <div class="chat-input">
     <div class="fake-input">
@@ -389,6 +376,24 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
   border-radius: 0;
 }
 </style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    let messages = document.querySelectorAll('.message-content');
+    let delay = 1000;
+
+    for (let i = 3; i < messages.length; i++) {
+      messages[i].style.opacity = '0';
+      setTimeout(function() {
+        messages[i].style.opacity = '1';
+      }, delay * (i - 2));   messages[i].textContent = "Mensagem falsa " + (i - 2); // Adicione essa linha para gerar as mensagens falsas
+}
+
+});
+</script>
+
+
+  
 
 
 
