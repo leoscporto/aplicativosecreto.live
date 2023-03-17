@@ -216,9 +216,13 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
        
           
 		
-	<!-- Div que contém o GIF -->
+	
+	  
+		  
+      
+<!-- Div que contém o GIF -->
 <div id="gif-container">
-    <img id="gif" src="./assets/img/2023-03-16-18-06-17.gif" />
+   <img id="gif" src="./assets/img/2023-03-16-18-06-17.gif" />
 </div>
 
 <!-- Div que contém o botão -->
@@ -226,49 +230,49 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
     <button id="trocar-gif">Trocar GIF</button>
 </div>
 
-<!-- Película invisível sobreposta ao vídeo -->
-<div id="película"></div>
+<!-- Div que contém o vídeo -->
+<div id="video-container" style="display:none;">
+    <video id="video" width="320" height="240" controlsList="nodownload" autoplay="autoplay" muted>
+        <source src="./assets/img/2023-03-16 18-06-54 (1) (1).mp4" type="video/mp4">
+        <object data="" width="320" height="240">
+            <embed width="320" height="240" src="./assets/img/2023-03-16 18-06-54 (1) (1).mp4">
+        </object>
+    </video>
+</div>
+
+<!-- Div que contém o título e o parágrafo -->
+<div id="final-container" style="display:none;">
+    <h1>Parabéns! Você ganhou R$200 reais!</h1>
+    <p>Para sacar seu dinheiro, clique no botão abaixo e entre em contato com nossa gerente pelo Whatsapp</p>
+    <button id="contato-whatsapp">Contato pelo Whatsapp</button>
+</div>
 
 <script>
-    // Seleciona o botão e o elemento de GIF
+    // Seleciona o botão, o elemento de GIF e o elemento de vídeo
     const botao = document.getElementById("trocar-gif");
     const gif = document.getElementById("gif");
+    const videoContainer = document.getElementById("video-container");
+    const finalContainer = document.getElementById("final-container");
+    const video = document.getElementById("video");
 
     // Adiciona o evento de click ao botão
     botao.addEventListener("click", function() {
-        // Altera o atributo "src" da tag "img" para o caminho do novo GIF
-        gif.setAttribute("src", "./assets/img/2023-03-16-18-06-54.gif");
-
-        // Seleciona o vídeo e a película invisível
-        const video = document.getElementById("video");
-        const pelicula = document.getElementById("película");
-
-        // Exibe o vídeo e a película invisível
-        video.style.display = "block";
-        pelicula.style.display = "block";
-
-        // Oculta o botão "trocar GIF"
+        // Esconde o botão, o GIF e exibe o vídeo
         botao.style.display = "none";
+        gif.style.display = "none";
+        videoContainer.style.display = "block";
+
+        // Altera o atributo "src" da tag "img" para a URL do vídeo
+        gif.setAttribute("src", "./assets/img/2023-03-16 18-06-54 (1) (1).mp4");
+    });
+
+    // Adiciona o evento de fim de reprodução do vídeo
+    video.addEventListener('ended', function() {
+        // Esconde o vídeo e exibe o título e o parágrafo
+        videoContainer.style.display = "none";
+        finalContainer.style.display = "block";
     });
 </script>
-
-<!-- Vídeo mp4 -->
-<video id="video" width="320" height="240" controls="controls" autoplay="autoplay" style="display: none;">
-    <source src="./assets/img/2023-03-16 18-06-54 (1) (1).mp4" type="video/mp4">
-    <object data="" width="320" height="240">
-        <embed width="320" height="240" src="./assets/img/2023-03-16 18-06-54 (1) (1).mp4">
-    </object>
-</video>
-
-<!-- Título e texto exibidos após o término do vídeo -->
-<div id="conclusão" style="display: none;">
-    <h1>Parabéns! Você ganhou R$200 reais!</h1>
-    <p>Para sacar seu dinheiro, clique no botão abaixo e entre em contato com nossa gerente pelo Whatsapp</p>
-    <button id="sacar-dinheiro" style="background-color: green;">Sacar dinheiro</button>
-</div>
-	  
-		  
-      
 
 
 
