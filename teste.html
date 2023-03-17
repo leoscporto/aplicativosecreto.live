@@ -215,61 +215,37 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
 
        
           
-		 <video width="320" height="240" controls="controls" autoplay="autoplay">
-<source src="./assets/img/2023-03-16 18-06-54 (1) (1).mp4" type="video/mp4">
-<object data="" width="320" height="240">
-<embed width="320" height="240" src="./assets/img/2023-03-16 18-06-54 (1) (1).mp4">
-</object>
-</video> 
+		
 		  
-		<div id="gif-container">
-   <video id="gif" src="./assets/img/2023-03-16 18-06-54 (1) (1).mp4" />
-</video> 
 		  
       
  <!-- Div que contém o GIF -->
 <div id="gif-container">
-   <img id="gif" src="./assets/img/2023-03-16-18-06-17.gif" />
+   <video id="video" width="320" height="240" controls="controls" autoplay="autoplay">
+      <source id="video-source" src="./assets/img/2023-03-16-18-06-17.gif" type="video/mp4">
+   </video>
 </div>
 
 <!-- Div que contém o botão -->
 <div>
-    <button id="trocar-gif">Trocar GIF</button>
-</div>
-
-<!-- Div que conterá a mensagem de parabéns -->
-<div id="parabens-container" style="display: none;">
-    <h1>Parabéns! Você ganhou R$200!</h1>
-    <p>Para sacar seu dinheiro, basta entrar em contato com nossa gerente no WhatsApp.</p>
-    <button id="sacar-dinheiro">Clique e saque seu dinheiro</button>
+    <button id="trocar-video">Trocar Vídeo</button>
 </div>
 
 <script>
-    // Seleciona o botão e o elemento de GIF
-    const botao = document.getElementById("trocar-gif");
-    const gif = document.getElementById("gif");
-    const parabensContainer = document.getElementById("parabens-container");
-    const sacarDinheiroBtn = document.getElementById("sacar-dinheiro");
+    // Seleciona o botão e o elemento de vídeo e source
+    const botao = document.getElementById("trocar-video");
+    const video = document.getElementById("video");
+    const source = document.getElementById("video-source");
 
     // Adiciona o evento de click ao botão
     botao.addEventListener("click", function() {
-        // Altera o atributo "src" da tag "img" para o caminho do novo GIF
-        gif.setAttribute("src", "./assets/img/2023-03-16-18-06-54.gif");
-
-        // Quando o novo GIF terminar de tocar
-        gif.addEventListener("animationend", function() {
-            // Esconde o GIF e mostra a mensagem de parabéns
-            gif.style.display = "none";
-            parabensContainer.style.display = "block";
-        });
-    });
-
-    // Adiciona o evento de click ao botão "sacar-dinheiro"
-    sacarDinheiroBtn.addEventListener("click", function() {
-        // Redireciona para a página de contato da gerente no WhatsApp
-        window.location.href = "https://wa.me/XXXXXXXXXXX";
+        // Altera o atributo "src" da tag "source" para o caminho do novo vídeo
+        source.setAttribute("src", "./assets/img/2023-03-16 18-06-54 (1) (1).mp4");
+        // Recarrega o vídeo
+        video.load();
     });
 </script>
+
 
 
 
