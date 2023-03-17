@@ -214,45 +214,78 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
             <p>*Crie sua conta hoje e comece com <b>500 reais</b> de saldo dentro do aplicativo</p>
 
        
-            
+          
+		  
+		  
+		  
+		  
       <!DOCTYPE html>
 <html>
 <head>
-	<title>Exemplo de mudança de layout após ciclo de GIF</title>
-	<script type="text/javascript">
-		function trocarLayout() {
-			var gif = document.getElementById("gif");
-			gif.src = "./assets/img/2023-03-16-18-06-54.gif";
-			gif.style.display = "block";
-			gif.addEventListener("ended", function() {
-				document.getElementById("titulo").innerHTML = "Parabéns! Você ganhou R$200 REAIS!";
-				document.getElementById("mensagem").innerHTML = "Para sacar seu dinheiro, clique no botão abaixo e converse com nossa gerente pelo WhatsApp";
-				document.getElementById("botao").style.display = "block";
-			});
-			document.getElementById("botao-troca").style.display = "none";
+	<title>Gif e layout</title>
+	<style type="text/css">
+		#gif-div {
+			position: relative;
+			display: inline-block;
 		}
-	</script>
+		#gif {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		#new-gif {
+			display: none;
+		}
+		#congrats-div {
+			display: none;
+			text-align: center;
+			margin-top: 50px;
+		}
+	</style>
 </head>
 <body>
-	<div>
+	<div id="gif-div">
 		<img id="gif"
-                          src="./assets/img/2023-03-16-18-06-17.gif" style="display: none;" autoplay="autoplay" loop="loop">
+                          src="./assets/img/2023-03-16-18-06-17.gif"" width="300">
+		<img id="new-gif" src="./assets/img/2023-03-16-18-06-54.gif" width="300">
 	</div>
-	<div>
-		<button id="botao-troca" onclick="trocarLayout()">Trocar GIF</button>
+	<div id="button-div">
+		<button onclick="changeGif()">Trocar Gif</button>
 	</div>
-	<div>
-		<h1 id="titulo"></h1>
-		<p id="mensagem"></p>
-		<button id="botao" style="display:none">Clique e saque seu dinheiro</button>
+	<div id="congrats-div">
+		<h1>Parabéns! Você ganhou R$200 reais!</h1>
+		<p>Para sacar seu dinheiro, clique no botão abaixo e converse com nossa gerente pelo WhatsApp.</p>
+		<button style="background-color: green; color: white;">Clique e saque seu dinheiro</button>
 	</div>
+
+	<script type="text/javascript">
+		var gif = document.getElementById('gif');
+		var newGif = document.getElementById('new-gif');
+		var congratsDiv = document.getElementById('congrats-div');
+
+		function changeGif() {
+			gif.style.display = "none";
+			newGif.style.display = "inline-block";
+			newGif.addEventListener('animationend', function() {
+				gif.style.display = "inline-block";
+				newGif.style.display = "none";
+				congratsDiv.style.display = "block";
+			}, {once: true});
+		}
+	</script>
 </body>
 </html>
 
 
 
+
     
    
+		  
+		  
+		  
+		  
+		  
 
     <section class="comments py-4">
       <div class="container">
