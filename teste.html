@@ -350,76 +350,43 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
 }
 		  </style>
 		 <script>
-			 // Define a lista de mensagens
-const messages = [
-  {
-    name: 'Julia',
-    message: 'Adorei o produto, muito bom mesmo! 😍',
-    imageSrc: './assets/img/comentarios/user1.jpg'
-  },
-  {
-    name: 'Lucas',
-    message: 'Comprei e aprovei! 🤩',
-    imageSrc: './assets/img/comentarios/user2.jpg'
-  },
-  {
-    name: 'Mariana',
-    message: 'Produto de qualidade e entrega rápida. 👏🏼',
-    imageSrc: './assets/img/comentarios/user3.jpg'
-  },
-  {
-    name: 'Gabriel',
-    message: 'Ótimo atendimento ao cliente! 👍🏼',
-    imageSrc: './assets/img/comentarios/user4.jpg'
-  },
-  {
-    name: 'Larissa',
-    message: 'Produto chegou em perfeito estado. Recomendo! 😉',
-    imageSrc: './assets/img/comentarios/user5.jpg'
-  },
-  {
-    name: 'Pedro',
-    message: 'Melhor compra que já fiz! 😁',
-    imageSrc: './assets/img/comentarios/user6.jpg'
-  }
-];
+			
+// Cria uma mensagem do chat com nome de usuário, imagem e texto
+function createChatMessage({ name, image, text }) {
+  const messageContainer = document.createElement("div");
+  messageContainer.classList.add("message-container");
 
-// Define a função para criar cada mensagem de chat
-function createChatMessage(message) {
-  const chatMessage = document.createElement('div');
-  chatMessage.classList.add('chat-message');
+  const messageImg = document.createElement("img");
+  messageImg.classList.add("message-img");
+  messageImg.src = `./assets/img/comentarios/${image}`;
 
-  const userImage = document.createElement('img');
-  userImage.classList.add('user-image');
-  userImage.src = message.imageSrc;
-  chatMessage.appendChild(userImage);
+  const messageName = document.createElement("p");
+  messageName.classList.add("message-name");
+  messageName.textContent = name;
 
-  const messageBubble = document.createElement('div');
-  messageBubble.classList.add('message-bubble');
-  chatMessage.appendChild(messageBubble);
+  const messageText = document.createElement("p");
+  messageText.classList.add("message-text");
+  messageText.textContent = text;
 
-  const messageText = document.createElement('p');
-  messageText.classList.add('message-text');
-  messageText.innerText = message.message;
-  messageBubble.appendChild(messageText);
+  messageContainer.appendChild(messageImg);
+  messageContainer.appendChild(messageName);
+  messageContainer.appendChild(messageText);
 
-  const userName = document.createElement('p');
-  userName.classList.add('user-name');
-  userName.innerText = message.name;
-  messageBubble.appendChild(userName);
-
-  return chatMessage;
+  return messageContainer;
 }
 
-// Adiciona o título do chat
-const chatTitle = document.createElement('h2');
-chatTitle.innerText = 'Chat ao vivo de membros';
+// Seleciona o elemento que contém o chat
+const chatBox = document.querySelector(".chat-box");
 
-// Adiciona o chat e o título na página
-const chatBox = document.createElement('div');
-chatBox.classList.add('chat-box');
-chatBox.appendChild(chatTitle);
-document.body.appendChild(chatBox);
+// Cria um array de mensagens de exemplo
+const messages = [
+  { name: "Maria", image: "img1.jpg", text: "Olá pessoal, tudo bem?" },
+  { name: "Pedro", image: "img2.jpg", text: "Oi Maria, tudo tranquilo e contigo?" },
+  { name: "Luciana", image: "img3.jpg", text: "Estou bem, obrigada por perguntar!" },
+  { name: "João", image: "img4.jpg", text: "Boa tarde, pessoal!" },
+  { name: "Ana", image: "img5.jpg", text: "Oi João, tudo bem?" },
+  { name: "Carlos", image: "img6.jpg", text: "Olá pessoal, como estão?" },
+];
 
 // Adiciona as primeiras três mensagens imediatamente
 messages.slice(0, 3).forEach((message) => {
@@ -431,47 +398,10 @@ messages.slice(0, 3).forEach((message) => {
 setTimeout(() => {
   messages.slice(3, 6).forEach((message) => {
     const chatMessage = createChatMessage(message);
-    chatMessage.style.display = 'none';
-    chatBox.appendChild(chatMessage);
-
-    setTimeout(() => {
-      chatMessage.style.display = 'block';
-
-	    
-	    
-	    
-	    <<>>
-
-setTimeout(() => {
-  messages.slice(4, 5).forEach((message) => {
-    const chatMessage = createChatMessage(message);
     chatBox.appendChild(chatMessage);
   });
-}, 6000);
+}, 3000);
 
-setTimeout(() => {
-  messages.slice(5, 6).forEach((message) => {
-    const chatMessage = createChatMessage(message);
-    chatBox.appendChild(chatMessage);
-  });
-}, 9000);
-
-function createChatMessage({ name, img, message }) {
-  const message = document.createElement('div');
-  message.classList.add('chat-message');
-
-  const userImage = document.createElement('img');
-  userImage.src = img;
-  userImage.alt = `Foto de perfil do usuário ${name}`;
-  message.appendChild(userImage);
-
-  const messageText = document.createElement('div');
-  messageText.classList.add('chat-message-text');
-  messageText.textContent = message;
-  message.appendChild(messageText);
-
-  return message;
-}
 
 		  </script>
 		  
