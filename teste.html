@@ -291,47 +291,45 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
 		  
 		  
 		  
-		<div class="chat">
-  <div class="chat-title">Chat ao vivo de membros</div>
-  <div class="chat-messages">
-    <div class="message">
-      <img src="./assets/img/comentarios/user1.jpg" alt="Foto de perfil de Sarah" class="profile-pic">
-      <div class="message-content">Adorei essa ideia! Vou experimentar em breve.</div>
-    </div>
-    <div class="message">
-      <img src="./assets/img/comentarios/user2.jpg" alt="Foto de perfil de John" class="profile-pic">
-      <div class="message-content">Funcionou perfeitamente para mim. Obrigado!</div>
-    </div>
-    <div class="message">
-      <img src="./assets/img/comentarios/user3.jpg" alt="Foto de perfil de Emily" class="profile-pic">
-      <div class="message-content">Estou amando os resultados. Não pare de postar essas dicas incríveis!</div>
-    </div>
-    <script>
-  function addMessage(id, imgSrc, alt, content) {
-    const messagesDiv = document.querySelector('.chat-messages');
-    const messageHTML = `
-      <div class="message">
-        <img src="${imgSrc}" alt="${alt}" class="profile-pic">
-        <div class="message-content">${content}</div>
-      </div>
-    `;
-    const messageDiv = document.querySelector(`#${id}`);
-    messageDiv.innerHTML = messageHTML;
-    messagesDiv.appendChild(messageDiv);
-  }
+		<div class="chat-messages">
+  <div class="message">
+    <img src="./assets/img/comentarios/user1.jpg" alt="Foto de perfil de Sarah" class="profile-pic">
+    <div class="message-content">Adorei essa ideia! Vou experimentar em breve.</div>
+  </div>
+  <div class="message">
+    <img src="./assets/img/comentarios/user2.jpg" alt="Foto de perfil de John" class="profile-pic">
+    <div class="message-content">Funcionou perfeitamente para mim. Obrigado!</div>
+  </div>
+  <div class="message">
+    <img src="./assets/img/comentarios/user3.jpg" alt="Foto de perfil de Emily" class="profile-pic">
+    <div class="message-content">Estou amando os resultados. Não pare de postar essas dicas incríveis!</div>
+  </div>
+  <div class="message delayed">
+    <img src="./assets/img/comentarios/user4.jpg" alt="Foto de perfil de Mike" class="profile-pic">
+    <div class="message-content">Nunca pensei que seria tão fácil. Obrigado por compartilhar!</div>
+  </div>
+  <div class="message delayed">
+    <img src="./assets/img/comentarios/user5.jpg" alt="Foto de perfil de Jessica" class="profile-pic">
+    <div class="message-content">Já estou vendo uma grande diferença. Incrível!</div>
+  </div>
+  <div class="message delayed">
+    <img src="./assets/img/comentarios/user6.jpg" alt="Foto de perfil de David" class="profile-pic">
+    <div class="message-content">Muito útil! Obrigado por compartilhar seus conhecimentos.</div>
+  </div>
+</div>
 
-  setTimeout(() => {
-    addMessage('message4', './assets/img/comentarios/user4.jpg', 'Foto de perfil de Mike', 'Nunca pensei que seria tão fácil. Obrigado por compartilhar!');
-  }, 3000);
+   <script>
+  // seleciona todas as mensagens com a classe "delayed"
+  const delayedMessages = document.querySelectorAll('.delayed');
 
-  setTimeout(() => {
-    addMessage('message5', './assets/img/comentarios/user5.jpg', 'Foto de perfil de Jessica', 'Já estou vendo uma grande diferença. Incrível!');
-  }, 6000);
-
-  setTimeout(() => {
-    addMessage('message6', './assets/img/comentarios/user6.jpg', 'Foto de perfil de David', 'Muito útil! Obrigado por compartilhar seus conhecimentos.');
-  }, 9000);
+  // itera sobre cada mensagem e adiciona a classe "visible" após um atraso de 3 segundos
+  delayedMessages.forEach((message, index) => {
+    setTimeout(() => {
+      message.classList.add('visible');
+    }, (index + 1) * 3000); // cada mensagem aparece 3 segundos após a anterior
+  });
 </script>
+
 
   </div>
   <div class="chat-input">
