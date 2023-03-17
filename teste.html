@@ -298,7 +298,7 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
       <img src="./assets/img/comentarios/user1.jpg" alt="Foto de perfil de Sarah" class="profile-pic">
       <div class="message-content">Adorei essa ideia! Vou experimentar em breve.</div>
     </div>
-    <div class="message">
+    <<div class="message">
       <img src="./assets/img/comentarios/user2.jpg" alt="Foto de perfil de John" class="profile-pic">
       <div class="message-content">Funcionou perfeitamente para mim. Obrigado!</div>
     </div>
@@ -306,17 +306,17 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
       <img src="./assets/img/comentarios/user3.jpg" alt="Foto de perfil de Emily" class="profile-pic">
       <div class="message-content">Estou amando os resultados. Não pare de postar essas dicas incríveis!</div>
     </div>
-    <div class="message">
-      <img src="./assets/img/comentarios/user4.jpg" alt="Foto de perfil de Mike" class="profile-pic">
-      <div class="message-content"></div>
+    <div class="message" style="display: none;">
+      <img src="./assets/img/comentarios/user4.jpg" alt="Foto de perfil de Mike" class="profile-pic" style="opacity: 0;">
+      <div class="message-content" style="opacity: 0;"></div>
     </div>
-    <div class="message">
-      <img src="./assets/img/comentarios/user5.jpg" alt="Foto de perfil de Jessica" class="profile-pic">
-      <div class="message-content"></div>
+    <div class="message" style="display: none;">
+      <img src="./assets/img/comentarios/user5.jpg" alt="Foto de perfil de Jessica" class="profile-pic" style="opacity: 0;">
+      <div class="message-content" style="opacity: 0;"></div>
     </div>
-    <div class="message">
-      <img src="./assets/img/comentarios/user6.jpg" alt="Foto de perfil de David" class="profile-pic">
-      <div class="message-content"></div>
+    <div class="message" style="display: none;">
+      <img src="./assets/img/comentarios/user6.jpg" alt="Foto de perfil de David" class="profile-pic" style="opacity: 0;">
+      <div class="message-content" style="opacity: 0;"></div>
     </div>
   </div>
   <div class="chat-input">
@@ -357,38 +357,31 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
 }
 
 .profile-pic {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
+  width
+// Incluir jQuery (pode ser incluído diretamente ou por meio de um CDN)
 
-.message-content {
-  background-color: #e6e6e6;
-  border-radius: 10px;
-  padding: 5px;
-  flex-grow: 1;
-}
-
-.chat-input {
-  background-color: #e6e6e6;
-  padding: 10px;
-  border-radius: 0;
-}
-</style>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+// Código JavaScript para adicionar mensagens com delay
 
 <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    let messages = document.querySelectorAll('.message-content');
-    let delay = 1000;
-
-    for (let i = 3; i < messages.length; i++) {
-      messages[i].style.opacity = '0';
-      setTimeout(function() {
-        messages[i].style.opacity = '1';
-      }, delay * (i - 2));   messages[i].textContent = "Mensagem falsa " + (i - 2); // Adicione essa linha para gerar as mensagens falsas
-}
-
+$(document).ready(function(){
+  setTimeout(function(){
+    $(".message:eq(3)").fadeIn(1000).css("display", "flex");
+    $(".message:eq(3) .profile-pic").animate({opacity: 1}, 1000);
+    $(".message:eq(3) .message-content").animate({opacity: 1}, 1000);
+  }, 3000);
+  
+  setTimeout(function(){
+    $(".message:eq(4)").fadeIn(1000).css("display", "flex");
+    $(".message:eq(4) .profile-pic").animate({opacity: 1}, 1000);
+    $(".message:eq(4) .message-content").animate({opacity: 1}, 1000);
+  }, 4000);
+  
+  setTimeout(function(){
+    $(".message:eq(5)").fadeIn(1000).css("display", "flex");
+    $(".message:eq(5) .profile-pic").animate({opacity: 1}, 1000);
+    $(".message:eq(5) .message-content").animate({opacity: 1}, 1000);
+  }, 5000);
 });
 </script>
 
