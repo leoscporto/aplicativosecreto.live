@@ -397,7 +397,7 @@ function createChatMessage({ name, img, message }) {
 
   const messageText = document.createElement('div');
   messageText.classList.add('chat-message-text');
-  messageText.textContent = text;
+  messageText.textContent = message;
   message.appendChild(messageText);
 
   return message;
