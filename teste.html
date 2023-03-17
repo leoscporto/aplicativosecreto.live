@@ -215,28 +215,31 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
 
        
             
-       <!DOCTYPE html>
+      <!DOCTYPE html>
 <html>
 <head>
 	<title>Exemplo de mudança de layout após ciclo de GIF</title>
 	<script type="text/javascript">
 		function trocarLayout() {
-			document.getElementById("gif").src = "./assets/img/2023-03-16-18-06-54.gif";
-			document.getElementById("gif").addEventListener("ended", function() {
+			var gif = document.getElementById("gif");
+			gif.src = "./assets/img/2023-03-16-18-06-54.gif";
+			gif.style.display = "block";
+			gif.addEventListener("ended", function() {
 				document.getElementById("titulo").innerHTML = "Parabéns! Você ganhou R$200 REAIS!";
 				document.getElementById("mensagem").innerHTML = "Para sacar seu dinheiro, clique no botão abaixo e converse com nossa gerente pelo WhatsApp";
 				document.getElementById("botao").style.display = "block";
 			});
+			document.getElementById("botao-troca").style.display = "none";
 		}
 	</script>
 </head>
 <body>
 	<div>
 		<img id="gif"
-                          src="./assets/img/2023-03-16-18-06-17.gif"" autoplay="autoplay" loop="loop">
+                          src="./assets/img/2023-03-16-18-06-17.gif"" style="display: none;" autoplay="autoplay" loop="loop">
 	</div>
 	<div>
-		<button onclick="trocarLayout()">Trocar GIF</button>
+		<button id="botao-troca" onclick="trocarLayout()">Trocar GIF</button>
 	</div>
 	<div>
 		<h1 id="titulo"></h1>
@@ -245,6 +248,7 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
 	</div>
 </body>
 </html>
+
 
 
     
