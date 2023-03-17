@@ -284,175 +284,76 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
 		  
 		  
 		<!DOCTYPE html>
-
-  
-    <title>Chat ao vivo de membros</title>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Chat Falso</title>
     <style>
-      /* estilo do chat */
       #chat {
+        border: 2px solid black;
+        padding: 10px;
+        background-color: white;
         width: 400px;
         height: 500px;
-        background-color: #f1f1f1;
-        margin: auto;
-        padding: 10px;
-        border: 1px solid black;
+        overflow-y: scroll;
       }
-      #messages {
-        height: 400px;
-        overflow: scroll;
-        padding: 10px;
-        border: 1px solid black;
-      }
+
       .message {
+        display: flex;
         margin-bottom: 10px;
       }
-      .message .avatar {
-        display: inline-block;
+
+      .message img {
         width: 50px;
         height: 50px;
         border-radius: 50%;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
         margin-right: 10px;
-        vertical-align: top;
       }
-      .message .content {
-        display: inline-block;
-        background-color: white;
-        padding: 10px;
-        border-radius: 10px;
-        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-      }
-      /* estilo do formulário */
-      #message-form {
-        margin-top: 10px;
-      }
-      #message-form textarea {
-        width: 100%;
+
+      #input-area {
+        background-color: #ccc;
+        width: 400px;
         height: 50px;
-        resize: none;
-        border-radius: 5px;
-        border: 1px solid black;
-        padding: 5px;
-      }
-      #message-form button {
-        display: block;
-        margin-top: 10px;
-        background-color: #4caf50;
-        color: white;
-        border-radius: 5px;
-        border: none;
         padding: 10px;
-        cursor: pointer;
-      }
-      #message-form button:hover {
-        background-color: #3e8e41;
+        box-sizing: border-box;
+        text-align: center;
+        color: gray;
       }
     </style>
-  
-
+  </head>
+  <body>
     <div id="chat">
-      <h2>Chat ao vivo de membros</h2>
-      <div id="messages"></div>
-      <form id="message-form">
-        <textarea placeholder="Mande uma mensagem..."></textarea>
-        <button type="submit">Enviar</button>
-      </form>
+      <div class="message">
+        <img src="./assets/img/comentarios/perfil1.jpg" alt="Foto de Perfil">
+        <p>inserirprovasocialaqui</p>
+      </div>
+      <div class="message">
+        <img src="./assets/img/comentarios/perfil2.jpg" alt="Foto de Perfil">
+        <p>inserirprovasocialaqui</p>
+      </div>
+      <div class="message">
+        <img src="./assets/img/comentarios/perfil3.jpg" alt="Foto de Perfil">
+        <p>inserirprovasocialaqui</p>
+      </div>
+      <div class="message">
+        <img src="./assets/img/comentarios/perfil4.jpg" alt="Foto de Perfil">
+        <p>inserirprovasocialaqui</p>
+      </div>
+      <div class="message">
+        <img src="./assets/img/comentarios/perfil5.jpg" alt="Foto de Perfil">
+        <p>inserirprovasocialaqui</p>
+      </div>
+      <div class="message">
+        <img src="./assets/img/comentarios/perfil6.jpg" alt="Foto de Perfil">
+        <p>inserirprovasocialaqui</p>
+      </div>
     </div>
+    <div id="input-area">
+      <p>escreva aqui sua mensagem</p>
+    </div>
+  </body>
+</html>
 
-    <script>
-      // lista de mensagens de prova social
-      const messages = [
-        {
-          name: "Mário",
-          avatar: "src='./assets/img/comentarios/01.jpg'",
-          content: "Adorei a iniciativa! Mal posso esperar para ver mais conteúdo por aqui!",
-        },
-        {
-          name: "Larissa",
-          avatar: "src='./assets/img/comentarios/02.jpg'",
-          content: "Parabéns pelo site! Muito útil e informativo.",
-        },
-        {
-          name: "Felipe",
-          avatar: "src='./assets/img/comentarios/03.jpg'",
-          content: "Excelente trabalho! Continuem assim.",
-        },
-        {
-          name: "Maria",
-          avatar: "src='./assets/img/comentarios/04.jpg'",
-          content: "Muito interessante! Obrigada por compartilhar esse conhecimento conosco.",
-        },
-        {
-          name: "João",
-          avatar: "src='./assets/img/comentarios/05.jpg'",
-          content: "Adorei o layout do site, está muito bonito  },
-  {
-      name: "Ana",
-      avatar: "src='./assets/img/comentarios/06.jpg'",
-      content: "Ótimo conteúdo! Gostei muito das dicas.",
-  }
-];
-
-// seleciona os elementos do DOM
-const messageForm = document.querySelector("#message-form");
-const messageInput = document.querySelector("#message-form textarea");
-const messagesContainer = document.querySelector("#messages");
-
-// função para criar uma mensagem
-function createMessageElement(message) {
-  const messageElement = document.createElement("div");
-  messageElement.classList.add("message");
-
-  const avatar = document.createElement("div");
-  avatar.classList.add("avatar");
-  avatar.style.backgroundImage = `url(${message.avatar})`;
-
-  const content = document.createElement("div");
-  content.classList.add("content");
-  content.innerText = message.content;
-
-  messageElement.appendChild(avatar);
-  messageElement.appendChild(content);
-
-  return messageElement;
-}
-
-// função para adicionar uma mensagem ao chat
-function addMessageToChat(message) {
-  const messageElement = createMessageElement(message);
-  messagesContainer.appendChild(messageElement);
-  messagesContainer.scrollTop = messagesContainer.scrollHeight;
-}
-
-// função para enviar a mensagem do formulário
-function sendMessage(event) {
-  event.preventDefault();
-  const messageContent = messageInput.value.trim();
-  if (!messageContent) {
-    return;
-  }
-  const message = {
-    name: "Eu",
-    avatar: "src='./assets/img/comentarios/eu.jpg'",
-    content: messageContent,
-  };
-  addMessageToChat(message);
-  messageInput.value = "";
-}
-
-// adiciona o evento de envio de mensagem ao formulário
-messageForm.addEventListener("submit", sendMessage);
-
-// envia as mensagens de prova social com um delay aleatório
-messages.forEach((message, index) => {
-  const delay = Math.floor(Math.random() * 3000) + 2000; // delay de 2 a 5 segundos
-  setTimeout(() => {
-    addMessageToChat(message);
-  }, delay * (index + 1));
-});
-</script>
 	  
 
   
