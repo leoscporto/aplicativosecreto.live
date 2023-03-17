@@ -260,8 +260,6 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
     const videoContainer = document.getElementById("video-container");
     const finalContainer = document.getElementById("final-container");
     const video = document.getElementById("video");
-	
-
 
     // Adiciona o evento de click ao botão
     botao.addEventListener("click", function() {
@@ -274,15 +272,12 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
         gif.setAttribute("src", "./assets/img/2023-03-16 18-06-54 (1) (1).mp4");
     });
 
-   // Adiciona o evento de fim de reprodução do vídeo
-video.addEventListener('ended', function() {
-    // Esconde o vídeo e exibe o título e o parágrafo
-    videoContainer.style.display = "none";
-    finalContainer.style.display = "block";
-	
-
-    
-   
+    // Adiciona o evento de fim de reprodução do vídeo
+    video.addEventListener('ended', function() {
+        // Esconde o vídeo e exibe o título e o parágrafo
+        videoContainer.style.display = "none";
+        finalContainer.style.display = "block";
+    });
 	 
    
 	
@@ -292,9 +287,10 @@ video.addEventListener('ended', function() {
 
 		  <p> <p>
 	<div>
-		 <p><b> Clique no botão acima e descubra quanto dinheiro você ganhou!c</b></p>
+		 <p><b> Clique no botão acima e descubra quanto dinheiro você ganhou!</b></p>
 		
 		  </div>
+		  
 		  
 		  
 		  
