@@ -222,8 +222,7 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
       
  <!-- Div que contém o GIF -->
 <div id="gif-container">
-   <img id="gif"
-                          src="./assets/img/2023-03-16-18-06-17.gif" />
+   <img id="gif" src="./assets/img/2023-03-16-18-06-17.gif" />
 </div>
 
 <!-- Div que contém o botão -->
@@ -231,17 +230,40 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
     <button id="trocar-gif">Trocar GIF</button>
 </div>
 
+<!-- Div que conterá a mensagem de parabéns -->
+<div id="parabens-container" style="display: none;">
+    <h1>Parabéns! Você ganhou R$200!</h1>
+    <p>Para sacar seu dinheiro, basta entrar em contato com nossa gerente no WhatsApp.</p>
+    <button id="sacar-dinheiro">Clique e saque seu dinheiro</button>
+</div>
+
 <script>
     // Seleciona o botão e o elemento de GIF
     const botao = document.getElementById("trocar-gif");
     const gif = document.getElementById("gif");
+    const parabensContainer = document.getElementById("parabens-container");
+    const sacarDinheiroBtn = document.getElementById("sacar-dinheiro");
 
     // Adiciona o evento de click ao botão
     botao.addEventListener("click", function() {
         // Altera o atributo "src" da tag "img" para o caminho do novo GIF
         gif.setAttribute("src", "./assets/img/2023-03-16-18-06-54.gif");
+
+        // Quando o novo GIF terminar de tocar
+        gif.addEventListener("animationend", function() {
+            // Esconde o GIF e mostra a mensagem de parabéns
+            gif.style.display = "none";
+            parabensContainer.style.display = "block";
+        });
+    });
+
+    // Adiciona o evento de click ao botão "sacar-dinheiro"
+    sacarDinheiroBtn.addEventListener("click", function() {
+        // Redireciona para a página de contato da gerente no WhatsApp
+        window.location.href = "https://wa.me/XXXXXXXXXXX";
     });
 </script>
+
 
 
     
