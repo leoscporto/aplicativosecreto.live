@@ -291,186 +291,88 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
 		  
 		  
 		  
-		<style>
-  #chat {
-    width: 400px;
-    height: 500px;
-    background-color: #fff;
-    border: 2px solid #000;
-    overflow-y: scroll;
-    padding: 10px;
-    box-sizing: border-box;
-    position: relative;
-  }
-  .message {
-    display: flex;
-    margin-bottom: 20px;
-  }
-  .avatar {
-    width: 50px;
-    height: 50px;
-    background-position: center;
-    background-size: cover;
-    border-radius: 50%;
-    margin-right: 10px;
-  }
-  .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #e8e8e8;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  }
-  .content h2 {
-    margin: 0;
-    margin-bottom: 5px;
-  }
-  .content p {
-    margin: 0;
-  }
-  #message-form {
-    display: flex;
-    margin-top: 20px;
-  }
-  #message-form textarea {
-    flex-grow: 1;
-    resize: none;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    padding: 5px;
-    margin-right: 10px;
-  }
-  #message-form button {
-    background-color: #4caf50;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
-    cursor: pointer;
-  }
-  #message-form button:hover {
-    background-color: #3e8e41;
-  }
-  #bottom-space {
-    height: 50px;
-    width: 100%;
-    background-color: #f5f5f5;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
-</style>
-
-<div id="chat">
-  <div id="messages">
+		<div class="chat">
+  <div class="chat-title">Chat ao vivo de membros</div>
+  <div class="chat-messages">
     <div class="message">
-      <div class="avatar" style="background-image: url(src='./assets/img/comentarios/01.jpg')"></div>
-      <div class="content">
-        <h2>João</h2>
-        <p>Excelente conteúdo, parabéns!</p>
-      </div>
+      <img src="./assets/img/comentarios/user1.jpg" alt="Foto de perfil de Sarah" class="profile-pic">
+      <div class="message-content">Adorei essa ideia! Vou experimentar em breve.</div>
     </div>
     <div class="message">
-      <div class="avatar" style="background-image: url(src='./assets/img/comentarios/02.jpg')"></div>
-      <div class="content">
-        <h2>Maria</h2>
-        <p>Adorei as dicas, obrigada por compartilhar.</p>
-      </div>
+      <img src="./assets/img/comentarios/user2.jpg" alt="Foto de perfil de John" class="profile-pic">
+      <div class="message-content">Funcionou perfeitamente para mim. Obrigado!</div>
     </div>
     <div class="message">
-      <div class="avatar" style="background-image: url(src='./assets/img/comentarios/03.jpg')"></div>
-      <div class="content">
-        <h2>Pedro</h2>
-        <p>Muito bom mesmo, já coloquei em prática!</p>
-      </div>
+      <img src="./assets/img/comentarios/user3.jpg" alt="Foto de perfil de Emily" class="profile-pic">
+      <div class="message-content">Estou amando os resultados. Não pare de postar essas dicas incríveis!</div>
+    </div>
+    <script>
+      setTimeout(function() {
+        var messages = document.getElementsByClassName("chat-messages")[0];
+        messages.innerHTML += '<div class="message"><img src="./assets/img/comentarios/user4.jpg" alt="Foto de perfil de Mike" class="profile-pic"><div class="message-content">Nunca pensei que seria tão fácil. Obrigado por compartilhar!</div></div>';
+        messages.innerHTML += '<div class="message"><img src="./assets/img/comentarios/user5.jpg" alt="Foto de perfil de Jessica" class="profile-pic"><div class="message-content">Já estou vendo uma grande diferença. Incrível!</div></div>';
+        messages.innerHTML += '<div class="message"><img src="./assets/img/comentarios/user6.jpg" alt="Foto de perfil de David" class="profile-pic"><div class="message-content">Muito útil! Obrigado por compartilhar seus conhecimentos.</div></div>';
+      }, 3000);
+    </script>
+  </div>
+  <div class="chat-input">
+    <div class="fake-input">
+      <p>Mande uma mensagem...</p>
     </div>
   </div>
-
-  <div id="bottom-space"></div>
-
-  <form id="message-form">
-    <textarea></textarea>
-    <button type="submit">Enviar</button>
-  </form>
 </div>
 
-<script>
-  // array
+<style>
+.chat {
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 350px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
 
-  const messagesDiv = document.getElementById('messages');
+.chat-title {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+  font-weight: bold;
+}
 
-  const names = ['Fernanda', 'Lucas', 'Gabriela', 'Rafael', 'Julia', 'Daniel'];
+.chat-messages {
+  padding: 10px;
+  height: 250px;
+  overflow-y: scroll;
+}
 
-  const getRandomName = () => {
-    const randomIndex = Math.floor(Math.random() * names.length);
-    return names[randomIndex];
-  };
+.message {
+  display: flex;
+  margin-bottom: 10px;
+}
 
-  const getRandomAvatarUrl = () => {
-    const randomIndex = Math.floor(Math.random() * 10) + 1;
-    return `src='./assets/img/comentarios/0${randomIndex}.jpg'`;
-  };
+.profile-pic {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
 
-  const getRandomMessage = () => {
-    const messages = [
-      'Muito interessante!',
-      'Amei o conteúdo!',
-      'Parabéns pela explicação.',
-      'Precisava disso, obrigado!',
-      'Vocês são demais!',
-      'Aprendi muito com esse post!'
-    ];
-    const randomIndex = Math.floor(Math.random() * messages.length);
-    return messages[randomIndex];
-  };
+.message-content {
+  background-color: #e6e6e6;
+  border-radius: 10px;
+  padding: 5px;
+  flex-grow: 1;
+}
 
-  const addMessageToChat = (name, avatarUrl, message) => {
-    const messageDiv = document.createElement('div');
-    messageDiv.className = 'message';
-    messageDiv.innerHTML = `
-      <div class="avatar" style="background-image: url(${avatarUrl})"></div>
-      <div class="content">
-        <h2>${name}</h2>
-        <p>${message}</p>
-      </div>
-    `;
-    messagesDiv.appendChild(messageDiv);
-    messagesDiv.scrollTop = messagesDiv.scrollHeight;
-  };
+.chat-input {
+  background-color: #e6e6e6;
+  padding: 10px;
+  border-radius: 0;
+}
+</style>
 
-  const addRandomMessageToChat = () => {
-    const name = getRandomName();
-    const avatarUrl = getRandomAvatarUrl();
-    const message = getRandomMessage();
-    addMessageToChat(name, avatarUrl, message);
-  };
-
-  setTimeout(() => {
-    addRandomMessageToChat();
-  }, 2000);
-
-  setTimeout(() => {
-    addRandomMessageToChat();
-  }, 4000);
-
-  setTimeout(() => {
-    addRandomMessageToChat();
-  }, 6000);
-
-  const form = document.getElementById('message-form');
-  const textarea = document.querySelector('#message-form textarea');
-
-  form.addEventListener('submit', (event) => {
-    event.preventDefault();
-    const message = textarea.value.trim();
-    if (message) {
-      addMessageToChat('Eu', getRandomAvatarUrl(), message);
-      textarea.value = '';
-    }
-  });
-</script>
 
 
 		  
