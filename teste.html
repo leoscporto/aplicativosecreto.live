@@ -350,15 +350,78 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
 }
 		  </style>
 		 <script>
-			 const messages = [
-  { name: 'Ana', img: './assets/img/comentarios/user4.jpg', message: 'Produto incrível! Fiquei muito satisfeita.' },
-  { name: 'Pedro', img: './assets/img/comentarios/user5.jpg', message: 'Atendimento excelente! Sempre prontos para ajudar.' },
-  { name: 'Julia', img: './assets/img/comentarios/user6.jpg', message: 'Entrega rápida e sem problemas. Recomendo.' }
+			 // Define a lista de mensagens
+const messages = [
+  {
+    name: 'Julia',
+    message: 'Adorei o produto, muito bom mesmo! 😍',
+    imageSrc: './assets/img/comentarios/user1.jpg'
+  },
+  {
+    name: 'Lucas',
+    message: 'Comprei e aprovei! 🤩',
+    imageSrc: './assets/img/comentarios/user2.jpg'
+  },
+  {
+    name: 'Mariana',
+    message: 'Produto de qualidade e entrega rápida. 👏🏼',
+    imageSrc: './assets/img/comentarios/user3.jpg'
+  },
+  {
+    name: 'Gabriel',
+    message: 'Ótimo atendimento ao cliente! 👍🏼',
+    imageSrc: './assets/img/comentarios/user4.jpg'
+  },
+  {
+    name: 'Larissa',
+    message: 'Produto chegou em perfeito estado. Recomendo! 😉',
+    imageSrc: './assets/img/comentarios/user5.jpg'
+  },
+  {
+    name: 'Pedro',
+    message: 'Melhor compra que já fiz! 😁',
+    imageSrc: './assets/img/comentarios/user6.jpg'
+  }
 ];
 
-const chatBox = document.querySelector('.chat-messages');
+// Define a função para criar cada mensagem de chat
+function createChatMessage(message) {
+  const chatMessage = document.createElement('div');
+  chatMessage.classList.add('chat-message');
 
-// Adiciona as três primeiras mensagens
+  const userImage = document.createElement('img');
+  userImage.classList.add('user-image');
+  userImage.src = message.imageSrc;
+  chatMessage.appendChild(userImage);
+
+  const messageBubble = document.createElement('div');
+  messageBubble.classList.add('message-bubble');
+  chatMessage.appendChild(messageBubble);
+
+  const messageText = document.createElement('p');
+  messageText.classList.add('message-text');
+  messageText.innerText = message.message;
+  messageBubble.appendChild(messageText);
+
+  const userName = document.createElement('p');
+  userName.classList.add('user-name');
+  userName.innerText = message.name;
+  messageBubble.appendChild(userName);
+
+  return chatMessage;
+}
+
+// Adiciona o título do chat
+const chatTitle = document.createElement('h2');
+chatTitle.innerText = 'Chat ao vivo de membros';
+
+// Adiciona o chat e o título na página
+const chatBox = document.createElement('div');
+chatBox.classList.add('chat-box');
+chatBox.appendChild(chatTitle);
+document.body.appendChild(chatBox);
+
+// Adiciona as primeiras três mensagens imediatamente
 messages.slice(0, 3).forEach((message) => {
   const chatMessage = createChatMessage(message);
   chatBox.appendChild(chatMessage);
@@ -368,9 +431,16 @@ messages.slice(0, 3).forEach((message) => {
 setTimeout(() => {
   messages.slice(3, 6).forEach((message) => {
     const chatMessage = createChatMessage(message);
+    chatMessage.style.display = 'none';
     chatBox.appendChild(chatMessage);
-  });
-}, 3000);
+
+    setTimeout(() => {
+      chatMessage.style.display = 'block';
+
+	    
+	    
+	    
+	    <<>>
 
 setTimeout(() => {
   messages.slice(4, 5).forEach((message) => {
