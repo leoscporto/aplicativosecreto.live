@@ -291,14 +291,14 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
 		  
 		  
 		  
-		<div class="chat">
+<div class="chat">
   <div class="chat-title">Chat</div>
   <div class="chat-messages">
     <div class="message">
       <img src="./assets/img/comentarios/user1.jpg" alt="Foto de perfil de Sarah" class="profile-pic">
       <div class="message-content">Adorei essa ideia! Vou experimentar em breve.</div>
     </div>
-    <<div class="message">
+    <div class="message">
       <img src="./assets/img/comentarios/user2.jpg" alt="Foto de perfil de John" class="profile-pic">
       <div class="message-content">Funcionou perfeitamente para mim. Obrigado!</div>
     </div>
@@ -306,17 +306,17 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
       <img src="./assets/img/comentarios/user3.jpg" alt="Foto de perfil de Emily" class="profile-pic">
       <div class="message-content">Estou amando os resultados. Não pare de postar essas dicas incríveis!</div>
     </div>
-    <div class="message" style="display: none;">
-      <img src="./assets/img/comentarios/user4.jpg" alt="Foto de perfil de Mike" class="profile-pic" style="opacity: 0;">
-      <div class="message-content" style="opacity: 0;"></div>
+    <div class="message">
+      <img src="./assets/img/comentarios/user4.jpg" alt="Foto de perfil de Mike" class="profile-pic">
+      <div class="message-content"></div>
     </div>
-    <div class="message" style="display: none;">
-      <img src="./assets/img/comentarios/user5.jpg" alt="Foto de perfil de Jessica" class="profile-pic" style="opacity: 0;">
-      <div class="message-content" style="opacity: 0;"></div>
+    <div class="message">
+      <img src="./assets/img/comentarios/user5.jpg" alt="Foto de perfil de Jessica" class="profile-pic">
+      <div class="message-content"></div>
     </div>
-    <div class="message" style="display: none;">
-      <img src="./assets/img/comentarios/user6.jpg" alt="Foto de perfil de David" class="profile-pic" style="opacity: 0;">
-      <div class="message-content" style="opacity: 0;"></div>
+    <div class="message">
+      <img src="./assets/img/comentarios/user6.jpg" alt="Foto de perfil de David" class="profile-pic">
+      <div class="message-content"></div>
     </div>
   </div>
   <div class="chat-input">
@@ -357,11 +357,25 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
 }
 
 .profile-pic {
-  width
-// Incluir jQuery (pode ser incluído diretamente ou por meio de um CDN)
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-// Código JavaScript para adicionar mensagens com delay
+.message-content {
+  background-color: #e6e6e6;
+  border-radius: 10px;
+  padding: 5px;
+  flex-grow: 1;
+}
+
+.chat-input {
+  background-color: #e6e6e6;
+  padding: 10px;
+  border-radius: 0;
+}
+</style>
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
@@ -372,34 +386,8 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
       messages[i].style.opacity = '0';
       setTimeout(function() {
         messages[i].style.opacity = '1';
-      }, delay * (i - 2));
-      messages[i].textContent = "Mensagem falsa " + (i - 2); // Adicione essa linha para gerar as mensagens falsas
-    }
-
-    let images = [
-      {src: './assets/img/comentarios/user4.jpg', alt: 'Foto de perfil de Lisa', delay: 2000},
-      {src: './assets/img/comentarios/user5.jpg', alt: 'Foto de perfil de Tom', delay: 3000},
-      {src: './assets/img/comentarios/user6.jpg', alt: 'Foto de perfil de Anna', delay: 4000}
-    ];
-
-    let chatMessages = document.querySelector('.chat-messages');
-
-    for (let i = 3; i < messages.length; i++) {
-      let image = document.createElement('img');
-      image.src = images[i-3].src;
-      image.alt = images[i-3].alt;
-      image.classList.add('profile-pic');
-      image.style.opacity = '0';
-      chatMessages.appendChild(image);
-
-      setTimeout(function() {
-        image.style.opacity = '1';
-      }, images[i-3].delay);
-
-      messages[i].style.marginLeft = '40px'; // Ajusta o espaço das mensagens para dar espaço para a foto
-    }
-  });
-</script> 
+      }, delay * (i - 2));   messages[i].textContent = "Mensagem falsa " + (i - 2); // Adicione essa linha para gerar as mensagens falsas
+} 
 
 
   
