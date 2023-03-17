@@ -373,7 +373,36 @@ setTimeout(() => {
 }, 3000);
 
 setTimeout(() => {
-  messages.slice(4, 
+  messages.slice(4, 5).forEach((message) => {
+    const chatMessage = createChatMessage(message);
+    chatBox.appendChild(chatMessage);
+  });
+}, 6000);
+
+setTimeout(() => {
+  messages.slice(5, 6).forEach((message) => {
+    const chatMessage = createChatMessage(message);
+    chatBox.appendChild(chatMessage);
+  });
+}, 9000);
+
+function createChatMessage({ name, img, text }) {
+  const message = document.createElement('div');
+  message.classList.add('chat-message');
+
+  const userImage = document.createElement('img');
+  userImage.src = img;
+  userImage.alt = `Foto de perfil do usuário ${name}`;
+  message.appendChild(userImage);
+
+  const messageText = document.createElement('div');
+  messageText.classList.add('chat-message-text');
+  messageText.textContent = text;
+  message.appendChild(messageText);
+
+  return message;
+}
+
 		  </script>
 		  
 		
