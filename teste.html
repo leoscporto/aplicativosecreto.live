@@ -360,31 +360,83 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
 </div>
 
 <style>
-	.chat-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.chat-box {
-  width: 400px;
-  height: 600px;
-  border: 2px solid black;
-  border-radius: 10px;
+	.chat-box {
+  border: 1px solid #000;
+  border-radius: 5px;
   overflow: hidden;
 }
 
-.chat-header {
-  background-color: #f2f2f2;
+.chat-box h3 {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+}
+
+.chat-box p {
+  margin: 0;
   padding: 10px;
 }
 
-.chat-header h3 {
-  margin: 0;
+.chat-box img {
+  max-width: 100%;
+  height: auto;
+  float: left;
+  margin-right: 10px;
 }
 
-.chat-messages
+.chat-box .message {
+  clear: both;
+  margin-bottom: 10px;
+}
+
+.chat-box .message:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.chat-box .message:nth-child(odd) {
+  background-color: #fff;
+}
+
+.chat-box input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-top: 1px solid #ccc;
+  font-size: 16px;
+  resize: none;
+}
+
+.chat-box .send-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.chat-box .send-button:hover {
+  opacity: 0.8;
+}
+
+.chat-box .chat-area {
+  max-height: 250px;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.chat-box .gray-area {
+  background-color: #f2f2f2;
+  height: 50px;
+}
+.chat-box .gray-area p {
+  margin: 0;
+  padding: 10px;
+}
+
 </style>
 
 		 <script>
