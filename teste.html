@@ -232,13 +232,14 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
 </div>
 
 <!-- Div que contém o vídeo -->
-<div style="position: absolute; width: 320px; height: 240px; pointer-events: none;"></div>
-<video width="320" height="240" controls="controls" autoplay="autoplay" muted>
-  <source src="./assets/img/2023-03-16 18-06-54 (1) (1).mp4" type="video/mp4">
-  <object data="" width="320" height="240">
-    <embed width="320" height="240" src="./assets/img/2023-03-16 18-06-54 (1) (1).mp4">
-  </object>
-</video>
+<div id="video-container" style="display:none;">
+    <video id="video" width="320" height="240" controlsList="nodownload" autoplay="autoplay" muted>
+        <source src="./assets/img/2023-03-16 18-06-54 (1) (1).mp4" type="video/mp4">
+        <object data="" width="320" height="240">
+            <embed width="320" height="240" src="./assets/img/2023-03-16 18-06-54 (1) (1).mp4">
+        </object>
+    </video>
+</div>
 
 
 <!-- Div que contém o título e o parágrafo -->
