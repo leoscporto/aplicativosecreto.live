@@ -216,7 +216,7 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
 
             <!-- Headline -->
             <h3 class="my-4" id="sumir"><b>CLIQUE E GANHE DINHEIRO</b></h3>
-		  <p >Ganhe de <b>R$100</b> a <b>R$500</b> agora clicando no botão abaixo! Simples assim!aa</p>
+		  <p id="abaixosumir" >Ganhe de <b>R$100</b> a <b>R$500</b> agora clicando no botão abaixo! Simples assim!b</p>
 
        
           
@@ -264,10 +264,12 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
 
     // Adiciona o evento de click ao botão
     botao.addEventListener("click", function() {
+	    
         // Esconde o botão, o GIF e exibe o vídeo
         botao.style.display = "none";
         gif.style.display = "none";
 	    sumir.style.display = "none";
+	    textoabaixobotao.style.display = "none";
         videoContainer.style.display = "block";
 
         // Altera o atributo "src" da tag "img" para a URL do vídeo
@@ -278,6 +280,7 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
     video.addEventListener('ended', function() {
         // Esconde o vídeo e exibe o título e o parágrafo
         videoContainer.style.display = "none";
+	    abaixosumir.style.display = "none";
         finalContainer.style.display = "block";
     });
 	 
@@ -286,10 +289,10 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
 </script>
 
 
-
+            <!-- TEXTO ABAIXO DO BOTÃO INICIAL -->
 		  <p> <p>
 	<div>
-		 <p><b> Clique no botão acima e descubra quanto dinheiro você ganhou!</b></p>
+		 <p id="textoabaixobotao"><b> Clique no botão acima e descubra quanto dinheiro você ganhou!</b></p>
 		
 		  </div>
 		  
