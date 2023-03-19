@@ -215,8 +215,8 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
 		  
 
             <!-- Headline -->
-            <h3 class="my-4" id="trocar-gif"><b>CLIQUE E GANHE DINHEIRO</b></h3>
-		  <p >Ganhe de <b>R$100</b> a <b>R$500</b> agora clicando no botão abaixo! Simples assim!a</p>
+            <h3 class="my-4" id="sumir"><b>CLIQUE E GANHE DINHEIRO</b></h3>
+		  <p >Ganhe de <b>R$100</b> a <b>R$500</b> agora clicando no botão abaixo! Simples assim!aa</p>
 
        
           
@@ -257,6 +257,7 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
     // Seleciona o botão, o elemento de GIF e o elemento de vídeo
     const botao = document.getElementById("trocar-gif");
     const gif = document.getElementById("gif");
+	 const text = document.getElementById("sumir");
     const videoContainer = document.getElementById("video-container");
     const finalContainer = document.getElementById("final-container");
     const video = document.getElementById("video");
@@ -266,6 +267,7 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
         // Esconde o botão, o GIF e exibe o vídeo
         botao.style.display = "none";
         gif.style.display = "none";
+	    sumir.style.display = "none";
         videoContainer.style.display = "block";
 
         // Altera o atributo "src" da tag "img" para a URL do vídeo
