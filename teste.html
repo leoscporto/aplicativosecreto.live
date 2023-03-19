@@ -264,7 +264,55 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
     slidesToScroll: 3
   });
 });
-		  </script>
+		
+  const carousel = document.querySelector('.carousel');
+  const slides = document.querySelectorAll('.slide');
+  const nextButton = document.querySelector('.carousel__button--next');
+  const prevButton = document.querySelector('.carousel__button--prev');
+
+  let slidePosition = 0;
+  const totalSlides = slides.length;
+
+  // Função para atualizar a posição do slide
+  function updateSlidePosition() {
+    for (let slide of slides) {
+      slide.classList.remove('carousel__item--visible');
+      slide.classList.add('carousel__item--hidden');
+    }
+
+    slides[slidePosition].classList.add('carousel__item--visible');
+  }
+
+  // Função para atualizar a posição do slide ao clicar no botão "Próximo"
+  function moveToNextSlide() {
+    if (slidePosition === totalSlides - 1) {
+      slidePosition = 0;
+    } else {
+      slidePosition++;
+    }
+
+    updateSlidePosition();
+  }
+
+  // Função para atualizar a posição do slide ao clicar no botão "Anterior"
+  function moveToPrevSlide() {
+    if (slidePosition === 0) {
+      slidePosition = totalSlides - 1;
+    } else {
+      slidePosition--;
+    }
+
+    updateSlidePosition();
+  }
+
+  // Event listener para o botão "Próximo"
+  nextButton.addEventListener('click', moveToNextSlide);
+
+  // Event listener para o botão "Anterior"
+  prevButton.addEventListener('click', moveToPrevSlide);
+
+</script>
+
 		  
 		  
 		  
