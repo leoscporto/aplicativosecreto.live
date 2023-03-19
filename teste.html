@@ -265,10 +265,10 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
   });
 });
 		
-  const carousel = document.querySelector('.carousel');
+  const carousel = document.querySelector('.carrossel');
   const slides = document.querySelectorAll('.slide');
-  const nextButton = document.querySelector('.carousel__button--next');
-  const prevButton = document.querySelector('.carousel__button--prev');
+  const nextButton = document.querySelector('.carrossel__button--next');
+  const prevButton = document.querySelector('.carrossel__button--prev');
 
   let slidePosition = 0;
   const totalSlides = slides.length;
@@ -276,11 +276,11 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
   // Função para atualizar a posição do slide
   function updateSlidePosition() {
     for (let slide of slides) {
-      slide.classList.remove('carousel__item--visible');
-      slide.classList.add('carousel__item--hidden');
+      slide.classList.remove('carrossel__item--visible');
+      slide.classList.add('carrossel__item--hidden');
     }
 
-    slides[slidePosition].classList.add('carousel__item--visible');
+    slides[slidePosition].classList.add('carrossel__item--visible');
   }
 
   // Função para atualizar a posição do slide ao clicar no botão "Próximo"
