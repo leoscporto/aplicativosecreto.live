@@ -291,11 +291,15 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
   const totalSlides = slides.length;
 
   // Função para atualizar a posição do slide
-  function updateSlidePosition() {
-    for (let slide of slides) {
-      slide.classList.remove('carrossel__item--visible');
-      slide.classList.add('carrossel__item--hidden');
-    }
+  ffunction updateSlidePosition() {
+  for (let slide of slides) {
+    slide.classList.remove('slide__item--visible');
+    slide.classList.add('slide__item--hidden');
+  }
+
+  slides[slidePosition].classList.remove('carrossel__item--hidden');
+  slides[slidePosition].classList.add('slide__item--visible');
+}
 
     slides[slidePosition].classList.add('carrossel__item--visible');
   }
