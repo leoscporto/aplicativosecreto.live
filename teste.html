@@ -246,11 +246,33 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
     </video>
 </div>
 
+		
+	style>
+      /* CSS para pulsar imagem */
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.2);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+      
+      img.pulsar {
+        animation: pulse 2s ease-in-out infinite;
+      }
+    </style>	  
+		  
+		  
+		  
 <!-- Div que contém o título e o parágrafo -->
 <div id="final-container" style="display:none;">
     <h1>Parabéns! Você ganhou R$200 reais!</h1>
     <p>Para sacar seu dinheiro, clique no botão abaixo e entre em contato com nossa gerente pelo Whatsapp</p>
-	<a href="https://wa.me/55318749593302"> <img width="320" height="120" src="./assets/img/botão wpp.png" /></a>
+	<a href="https://wa.me/55318749593302"> <img class="pulsar" width="320" height="120" src="./assets/img/botão wpp.png" /></a>
 
 </div>
 
