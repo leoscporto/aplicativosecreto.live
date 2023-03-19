@@ -205,7 +205,7 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
   <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
   <script>
     $(document).ready(function(){
-      $('.slider').slick({
+      $('.carrossel').slick({
         dots: false, // remove os pontos de navegação
         arrows: true, // exibe as setas de navegação
         infinite: true, // define se o carrossel vai voltar ao início depois de chegar ao final
@@ -241,7 +241,7 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
 
             <!-- Headline -->
             <h3 class="my-4" id="sumir"><b>CLIQUE E GANHE DINHEIRO</b></h3>
-		  <p id="abaixosumir" >Ganhe de <b>R$100</b> a <b>R$500</b> agora clicando no botão abaixo! Simples assim!</p>
+		  <p id="abaixosumir" >Ganhe de <b>R$100</b> a <b>R$500</b> agora clicando no botão abaixo! Simples assim!x</p>
 
        
          
@@ -249,14 +249,22 @@ src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
 	
 		  
 		
-	 <div class="slider">
+	 <div id="carrossel">
     <div><img src="https://velascobet.com/wp-content/webp-express/webp-images/uploads/2023/01/Frame-8.png.webp" /></div>
     <div><img src="https://velascobet.com/wp-content/webp-express/webp-images/uploads/2023/01/Frame-7.png.webp" /></div>
     <div><img src="https://velascobet.com/wp-content/webp-express/webp-images/uploads/2023/01/Frame-6.png.webp" /></div>
   </div>	  	  
 		
 
-		  
+		<script>
+			$(document).ready(function(){
+  $('.carrossel').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3
+  });
+});
+		  </script>
 		  
 		  
 		  
