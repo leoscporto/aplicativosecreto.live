@@ -120,7 +120,7 @@
           <div class="col-lg-8 text-center">
             <!-- Imagem Ultrasecreto -->
 	    <img class="img-fluid" src="./assets/img/construcao-saques-de-verdade-1-falta-comprimir.png">
-            <img class="img-fluid" src="./assets/img/construcao saques 1c - falta comprimir.png">
+            <img class="img-fluid" id="banner2" src="./assets/img/construcao saques 1c - falta comprimir.png">
 		  
 
 		  
@@ -268,6 +268,7 @@
 <script>
     // Seleciona o botão, o elemento de GIF e o elemento de vídeo
             const loadingGif = document.getElementById('gif-container');
+	    const banner = document.getElementById('banner2');
     const botao = document.getElementById("trocar-gif");
     const gif = document.getElementById("gif");
     const text = document.getElementById("sumir");
@@ -293,6 +294,7 @@
     // Adiciona o evento de fim de reprodução do vídeo
     video.addEventListener('ended', function() {
         // Esconde o vídeo e exibe o título e o parágrafo
+	banner.style.display = "none";    
         videoContainer.style.display = "none";
         finalContainer.style.display = "block";
     });
