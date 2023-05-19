@@ -391,43 +391,26 @@ ATENÇÃO: Essa breve apresentação sairá do ar no dia <span class="sm"></span
 <br><br>
     
     
-    <button type="submit"  style="background-color: green; color: white; padding: 10px 100px; font-size: 16px; display: block; margin: 0 auto;"><b>Enviar</b></button>
+    < <button type="button" onclick="redirecionar()" style="background-color: green; color: white; padding: 10px 100px; font-size: 16px; display: block; margin: 0 auto;"><b>Enviar</b></button>
+  </div>
 
-  </form>
-  
   <script>
-    document.getElementById("avaliadorForm").addEventListener("submit", function(event) {
-      event.preventDefault(); // Evita o envio do formulário
+    function redirecionar() {
+      var nome = document.getElementById('nome').value;
+      var email = document.getElementById('email').value;
+      var telefone = document.getElementById('telefone').value;
       
-      // Obtém os valores selecionados e preenchidos pelo usuário
-      var estado = document.getElementById("estado").value;
-      var conexao = document.querySelector('input[name="conexao"]:checked');
-      var dispositivos = document.querySelectorAll('input[name="dispositivos"]:checked');
-      var horas = document.getElementById("horas").value;
-      
-      // Verifica se todas as perguntas foram respondidas
-      if (estado && conexao && dispositivos.length > 0 && horas) {
-        // Simulação de salvamento dos dados
-        alert("Formulário enviado com sucesso!\n\nEstado: " + estado +
-              "\nConexão com a internet: " + conexao.value +
-              "\nDispositivos: " + getSelectedDispositivos(dispositivos) +
-                        "\nHoras disponíveis por semana: " + horas);
-  } else {
-    alert("Por favor, responda a todas as perguntas do formulário.");
-  }
-});
-
-function getSelectedDispositivos(dispositivos) {
-  var selectedDispositivos = [];
-  for (var i = 0; i < dispositivos.length; i++) {
-    selectedDispositivos.push(dispositivos[i].value);
-  }
-  return selectedDispositivos.join(", ");
-}
+      if (nome && email && telefone) {
+        window.location.href = "https://alertasaude.live";
+      } else {
+        alert("Por favor, responda todas as perguntas antes de enviar o formulário.");
+      }
+    }
   </script>
 </body>
 </html>
 
+  
     
     
     
