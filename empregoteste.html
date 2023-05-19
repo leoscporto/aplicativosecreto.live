@@ -302,6 +302,34 @@ ATENÇÃO: Essa breve apresentação sairá do ar no dia <span class="sm"></span
     h2 {
       color: black;
     }
+    
+    .container {
+      background-color: #f2f2f2;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 0 auto;
+      max-width: 600px;
+      box-sizing: border-box;
+    }
+    
+    .container label,
+    .container input,
+    .container select {
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+    .container input[type="checkbox"],
+    .container input[type="radio"] {
+      display: inline;
+    }
+    
+    @media (max-width: 600px) {
+      .container {
+        padding: 10px;
+        max-width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
