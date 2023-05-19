@@ -1,0 +1,496 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+		<title>Avaliador de Mídias P2 &#8211; Mais conecta</title>
+<meta name='robots' content='max-image-preview:large' />
+<script type='application/javascript'>console.log('PixelYourSite Free version 9.2.2');</script>
+<link rel="alternate" type="application/rss+xml" title="Mais conecta &raquo; Feed" href="https://avaliadordemidias.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Mais conecta &raquo; Comments Feed" href="https://avaliadordemidias.com/comments/feed/" />
+<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css' href='https://avaliadordemidias.com/wp-includes/css/dist/block-library/style.min.css?ver=6.2.1' media='all' />
+<link rel='stylesheet' id='classic-theme-styles-css' href='https://avaliadordemidias.com/wp-includes/css/classic-themes.min.css?ver=6.2.1' media='all' />
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='hello-elementor-css' href='https://avaliadordemidias.com/wp-content/themes/hello-elementor/style.min.css?ver=2.6.1' media='all' />
+<link rel='stylesheet' id='hello-elementor-theme-style-css' href='https://avaliadordemidias.com/wp-content/themes/hello-elementor/theme.min.css?ver=2.6.1' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css' href='https://avaliadordemidias.com/wp-content/plugins/elementor/assets/css/frontend-lite.min.css?ver=3.9.1' media='all' />
+<link rel='stylesheet' id='elementor-post-5-css' href='https://avaliadordemidias.com/wp-content/uploads/elementor/css/post-5.css?ver=1684352184' media='all' />
+<link rel='stylesheet' id='elementor-icons-css' href='https://avaliadordemidias.com/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.16.0' media='all' />
+<link rel='stylesheet' id='elementor-pro-css' href='https://avaliadordemidias.com/wp-content/plugins/pro-elements/assets/css/frontend-lite.min.css?ver=3.8.0' media='all' />
+<link rel='stylesheet' id='font-awesome-5-all-css' href='https://avaliadordemidias.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=3.9.1' media='all' />
+<link rel='stylesheet' id='font-awesome-4-shim-css' href='https://avaliadordemidias.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.9.1' media='all' />
+<link rel='stylesheet' id='elementor-global-css' href='https://avaliadordemidias.com/wp-content/uploads/elementor/css/global.css?ver=1684352185' media='all' />
+<link rel='stylesheet' id='elementor-post-54-css' href='https://avaliadordemidias.com/wp-content/uploads/elementor/css/post-54.css?ver=1684352185' media='all' />
+<link rel='stylesheet' id='eael-general-css' href='https://avaliadordemidias.com/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/css/view/general.min.css?ver=5.5.2' media='all' />
+<link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Montserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CSpartan%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.2.1' media='all' />
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><script src='https://avaliadordemidias.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.4' id='jquery-core-js'></script>
+<script src='https://avaliadordemidias.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.0' id='jquery-migrate-js'></script>
+<script src='https://avaliadordemidias.com/wp-content/plugins/pixelyoursite/dist/scripts/jquery.bind-first-0.2.3.min.js?ver=6.2.1' id='jquery-bind-first-js'></script>
+<script src='https://avaliadordemidias.com/wp-content/plugins/pixelyoursite/dist/scripts/js.cookie-2.1.3.min.js?ver=2.1.3' id='js-cookie-js'></script>
+<script id='pys-js-extra'>
+var pysOptions = {"staticEvents":[],"dynamicEvents":[],"triggerEvents":[],"triggerEventTypes":[],"debug":"","siteUrl":"https:\/\/avaliadordemidias.com","ajaxUrl":"https:\/\/avaliadordemidias.com\/wp-admin\/admin-ajax.php","enable_remove_download_url_param":"1","cookie_duration":"7","last_visit_duration":"60","gdpr":{"ajax_enabled":false,"all_disabled_by_api":false,"facebook_disabled_by_api":false,"analytics_disabled_by_api":false,"google_ads_disabled_by_api":false,"pinterest_disabled_by_api":false,"bing_disabled_by_api":false,"facebook_prior_consent_enabled":true,"analytics_prior_consent_enabled":true,"google_ads_prior_consent_enabled":null,"pinterest_prior_consent_enabled":true,"bing_prior_consent_enabled":true,"cookiebot_integration_enabled":false,"cookiebot_facebook_consent_category":"marketing","cookiebot_analytics_consent_category":"statistics","cookiebot_google_ads_consent_category":null,"cookiebot_pinterest_consent_category":"marketing","cookiebot_bing_consent_category":"marketing","consent_magic_integration_enabled":false,"real_cookie_banner_integration_enabled":false,"cookie_notice_integration_enabled":false,"cookie_law_info_integration_enabled":false},"woo":{"enabled":false},"edd":{"enabled":false}};
+</script>
+<script src='https://avaliadordemidias.com/wp-content/plugins/pixelyoursite/dist/scripts/public.js?ver=9.2.2' id='pys-js'></script>
+<script src='https://avaliadordemidias.com/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.9.1' id='font-awesome-4-shim-js'></script>
+<link rel="https://api.w.org/" href="https://avaliadordemidias.com/wp-json/" /><link rel="alternate" type="application/json" href="https://avaliadordemidias.com/wp-json/wp/v2/pages/54" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://avaliadordemidias.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://avaliadordemidias.com/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 6.2.1" />
+<link rel="canonical" href="https://avaliadordemidias.com/p2/" />
+<link rel='shortlink' href='https://avaliadordemidias.com/?p=54' />
+<link rel="alternate" type="application/json+oembed" href="https://avaliadordemidias.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Favaliadordemidias.com%2Fp2%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://avaliadordemidias.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Favaliadordemidias.com%2Fp2%2F&#038;format=xml" />
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N43K7TH');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WVDJXZT');</script>
+<!-- End Google Tag Manager -->
+<script type='application/javascript'>console.warn('PixelYourSite: no pixel configured.');</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PTW7MZZ');</script>
+<!-- End Google Tag Manager -->
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5BFTWVT');</script>
+<!-- End Google Tag Manager -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" /></head>
+<body class="page-template page-template-elementor_canvas page page-id-54 elementor-default elementor-template-canvas elementor-kit-5 elementor-page elementor-page-54">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N43K7TH"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WVDJXZT"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+		<div data-elementor-type="wp-page" data-elementor-id="54" class="elementor elementor-54">
+									<section class="elementor-section elementor-top-section elementor-element elementor-element-7d37f6ad elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7d37f6ad" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-404634a2" data-id="404634a2" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-5876591f elementor-widget elementor-widget-image" data-id="5876591f" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.9.1 - 14-12-2022 */
+.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img decoding="async" width="800" height="450" src="https://avaliadordemidias.com/wp-content/webp-express/webp-images/uploads/2023/01/logos-e-fundos-para-paginas-24-1024x576.png.webp" class="attachment-large size-large wp-image-1092" alt="" srcset="https://avaliadordemidias.com/wp-content/webp-express/webp-images/uploads/2023/01/logos-e-fundos-para-paginas-24-1024x576.png.webp 1024w,  https://avaliadordemidias.com/wp-content/webp-express/webp-images/uploads/2023/01/logos-e-fundos-para-paginas-24-300x169.png.webp 300w,  https://avaliadordemidias.com/wp-content/webp-express/webp-images/uploads/2023/01/logos-e-fundos-para-paginas-24-768x432.png.webp 768w,  https://avaliadordemidias.com/wp-content/webp-express/webp-images/uploads/2023/01/logos-e-fundos-para-paginas-24-1536x864.png.webp 1536w,  https://avaliadordemidias.com/wp-content/webp-express/webp-images/uploads/2023/01/logos-e-fundos-para-paginas-24.png.webp 1920w" sizes="(max-width: 800px) 100vw, 800px" />															</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-132b6d21 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible" data-id="132b6d21" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInLeft&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-5e96ea0d" data-id="5e96ea0d" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-3a7f41d7 elementor-widget elementor-widget-heading" data-id="3a7f41d7" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.9.1 - 14-12-2022 */
+.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style><h2 class="elementor-heading-title elementor-size-default">Você está se candidatando para  o cargo</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-61ea7c79 elementor-widget elementor-widget-heading" data-id="61ea7c79" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Avaliador de Mídias</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-5273db15 elementor-widget elementor-widget-heading" data-id="5273db15" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Para se candidatar para essa posição, por favor, preencha o formulário abaixo.</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-186e8e3 elementor-button-align-stretch elementor-widget elementor-widget-form" data-id="186e8e3" data-element_type="widget" data-settings="{&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;button_width&quot;:&quot;100&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.default">
+				<div class="elementor-widget-container">
+			<style>/*! pro-elements - v3.8.0 - 30-10-2022 */
+.elementor-button.elementor-hidden,.elementor-hidden{display:none}.e-form__step{width:100%}.e-form__step:not(.elementor-hidden){display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}.e-form__buttons{-ms-flex-wrap:wrap;flex-wrap:wrap}.e-form__buttons,.e-form__buttons__wrapper{display:-webkit-box;display:-ms-flexbox;display:flex}.e-form__indicators{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-wrap:nowrap;flex-wrap:nowrap;font-size:13px;margin-bottom:var(--e-form-steps-indicators-spacing)}.e-form__indicators,.e-form__indicators__indicator{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.e-form__indicators__indicator{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-ms-flex-preferred-size:0;flex-basis:0;padding:0 var(--e-form-steps-divider-gap)}.e-form__indicators__indicator__progress{width:100%;position:relative;background-color:var(--e-form-steps-indicator-progress-background-color);border-radius:var(--e-form-steps-indicator-progress-border-radius);overflow:hidden}.e-form__indicators__indicator__progress__meter{width:var(--e-form-steps-indicator-progress-meter-width,0);height:var(--e-form-steps-indicator-progress-height);line-height:var(--e-form-steps-indicator-progress-height);padding-right:15px;border-radius:var(--e-form-steps-indicator-progress-border-radius);background-color:var(--e-form-steps-indicator-progress-color);color:var(--e-form-steps-indicator-progress-meter-color);text-align:right;-webkit-transition:width .1s linear;-o-transition:width .1s linear;transition:width .1s linear}.e-form__indicators__indicator:first-child{padding-left:0}.e-form__indicators__indicator:last-child{padding-right:0}.e-form__indicators__indicator--state-inactive{color:var(--e-form-steps-indicator-inactive-primary-color,#c2cbd2)}.e-form__indicators__indicator--state-inactive [class*=indicator--shape-]:not(.e-form__indicators__indicator--shape-none){background-color:var(--e-form-steps-indicator-inactive-secondary-color,#fff)}.e-form__indicators__indicator--state-inactive object,.e-form__indicators__indicator--state-inactive svg{fill:var(--e-form-steps-indicator-inactive-primary-color,#c2cbd2)}.e-form__indicators__indicator--state-active{color:var(--e-form-steps-indicator-active-primary-color,#39b54a);border-color:var(--e-form-steps-indicator-active-secondary-color,#fff)}.e-form__indicators__indicator--state-active [class*=indicator--shape-]:not(.e-form__indicators__indicator--shape-none){background-color:var(--e-form-steps-indicator-active-secondary-color,#fff)}.e-form__indicators__indicator--state-active object,.e-form__indicators__indicator--state-active svg{fill:var(--e-form-steps-indicator-active-primary-color,#39b54a)}.e-form__indicators__indicator--state-completed{color:var(--e-form-steps-indicator-completed-secondary-color,#fff)}.e-form__indicators__indicator--state-completed [class*=indicator--shape-]:not(.e-form__indicators__indicator--shape-none){background-color:var(--e-form-steps-indicator-completed-primary-color,#39b54a)}.e-form__indicators__indicator--state-completed .e-form__indicators__indicator__label{color:var(--e-form-steps-indicator-completed-primary-color,#39b54a)}.e-form__indicators__indicator--state-completed .e-form__indicators__indicator--shape-none{color:var(--e-form-steps-indicator-completed-primary-color,#39b54a);background-color:initial}.e-form__indicators__indicator--state-completed object,.e-form__indicators__indicator--state-completed svg{fill:var(--e-form-steps-indicator-completed-secondary-color,#fff)}.e-form__indicators__indicator__icon{width:var(--e-form-steps-indicator-padding,30px);height:var(--e-form-steps-indicator-padding,30px);font-size:var(--e-form-steps-indicator-icon-size);border-width:1px;border-style:solid;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;overflow:hidden;margin-bottom:10px}.e-form__indicators__indicator__icon img,.e-form__indicators__indicator__icon object,.e-form__indicators__indicator__icon svg{width:var(--e-form-steps-indicator-icon-size);height:auto}.e-form__indicators__indicator__icon .e-font-icon-svg{height:1em}.e-form__indicators__indicator__number{width:var(--e-form-steps-indicator-padding,30px);height:var(--e-form-steps-indicator-padding,30px);border-width:1px;border-style:solid;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:10px}.e-form__indicators__indicator--shape-circle{border-radius:50%}.e-form__indicators__indicator--shape-square{border-radius:0}.e-form__indicators__indicator--shape-rounded{border-radius:5px}.e-form__indicators__indicator--shape-none{border:0}.e-form__indicators__indicator__label{text-align:center}.e-form__indicators__indicator__separator{width:100%;height:var(--e-form-steps-divider-width);background-color:#c2cbd2}.e-form__indicators--type-icon,.e-form__indicators--type-icon_text,.e-form__indicators--type-number,.e-form__indicators--type-number_text{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}.e-form__indicators--type-icon .e-form__indicators__indicator__separator,.e-form__indicators--type-icon_text .e-form__indicators__indicator__separator,.e-form__indicators--type-number .e-form__indicators__indicator__separator,.e-form__indicators--type-number_text .e-form__indicators__indicator__separator{margin-top:calc(var(--e-form-steps-indicator-padding, 30px) / 2 - var(--e-form-steps-divider-width, 1px) / 2)}.elementor-field-type-hidden{display:none}.elementor-field-type-html{display:inline-block}.elementor-login .elementor-lost-password,.elementor-login .elementor-remember-me{font-size:.85em}.elementor-field-type-recaptcha_v3 .elementor-field-label{display:none}.elementor-field-type-recaptcha_v3 .grecaptcha-badge{z-index:1}.elementor-button .elementor-form-spinner{-webkit-box-ordinal-group:4;-ms-flex-order:3;order:3}.elementor-form .elementor-button>span{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.elementor-form .elementor-button .elementor-button-text{white-space:normal;-webkit-box-flex:0;-ms-flex-positive:0;flex-grow:0}.elementor-form .elementor-button svg{height:auto}.elementor-form .elementor-button .e-font-icon-svg{height:1em}.elementor-select-wrapper .select-caret-down-wrapper{position:absolute;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);inset-inline-end:10px;pointer-events:none;font-size:11px}.elementor-select-wrapper .select-caret-down-wrapper svg{display:unset;width:1em;aspect-ratio:unset;fill:currentColor}.elementor-select-wrapper .select-caret-down-wrapper i{font-size:19px;line-height:2}.elementor-select-wrapper.remove-before:before{content:""!important}</style>		<form class="elementor-form" method="post" name="New Form">
+			<input type="hidden" name="post_id" value="54"/>
+			<input type="hidden" name="form_id" value="186e8e3"/>
+			<input type="hidden" name="referer_title" value="Avaliador de Mídias P2" />
+
+							<input type="hidden" name="queried_id" value="54"/>
+			
+			<div class="elementor-form-fields-wrapper elementor-labels-above">
+								<div class="elementor-field-type-select elementor-field-group elementor-column elementor-field-group-name elementor-col-100">
+												<label for="form-field-name" class="elementor-field-label">
+								Selecione seu estado							</label>
+								<div class="elementor-field elementor-select-wrapper remove-before">
+			<div class="select-caret-down-wrapper">
+				<i aria-hidden="true" class="eicon-caret-down"></i>			</div>
+			<select name="form_fields[name]" id="form-field-name" class="elementor-field-textual elementor-size-sm">
+									<option value="Acre">Acre</option>
+									<option value="Alagoas">Alagoas</option>
+									<option value="Amapá">Amapá</option>
+									<option value="Amazonas">Amazonas</option>
+									<option value="Bahia">Bahia</option>
+									<option value="Ceará">Ceará</option>
+									<option value="Espírito Santo">Espírito Santo</option>
+									<option value="Goiás">Goiás</option>
+									<option value="Maranhão">Maranhão</option>
+									<option value="Mato Grosso">Mato Grosso</option>
+									<option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+									<option value="Minas Gerais">Minas Gerais</option>
+									<option value="Pará">Pará</option>
+									<option value="Paraíba">Paraíba</option>
+									<option value="Paraná">Paraná</option>
+									<option value="Pernambuco">Pernambuco</option>
+									<option value="Piauí">Piauí</option>
+									<option value="Rio de Janeiro">Rio de Janeiro</option>
+									<option value="Rio Grande do Norte">Rio Grande do Norte</option>
+									<option value="Rio Grande do Sul">Rio Grande do Sul</option>
+									<option value="Rondônia">Rondônia</option>
+									<option value="Roraima">Roraima</option>
+									<option value="Santa Catarina">Santa Catarina</option>
+									<option value="São Paulo">São Paulo</option>
+									<option value="Sergipe">Sergipe</option>
+									<option value="Tocantins">Tocantins</option>
+									<option value="Distrito Federal">Distrito Federal</option>
+							</select>
+		</div>
+						</div>
+								<div class="elementor-field-type-checkbox elementor-field-group elementor-column elementor-field-group-email elementor-col-100">
+												<label for="form-field-email" class="elementor-field-label">
+								Você possui conexão com a internet							</label>
+						<div class="elementor-field-subgroup"><span class="elementor-field-option"><input type="checkbox" value="Sim" id="form-field-email-0" name="form_fields[email][]"> <label for="form-field-email-0">Sim</label></span><span class="elementor-field-option"><input type="checkbox" value="Não" id="form-field-email-1" name="form_fields[email][]"> <label for="form-field-email-1">Não</label></span></div>				</div>
+								<div class="elementor-field-type-checkbox elementor-field-group elementor-column elementor-field-group-field_13d5856 elementor-col-100">
+												<label for="form-field-field_13d5856" class="elementor-field-label">
+								Você possui algum celular smartphone, tablet, computador ou notebook?							</label>
+						<div class="elementor-field-subgroup"><span class="elementor-field-option"><input type="checkbox" value="Celular smartphone (android ou iphone)" id="form-field-field_13d5856-0" name="form_fields[field_13d5856][]"> <label for="form-field-field_13d5856-0">Celular smartphone (android ou iphone)</label></span><span class="elementor-field-option"><input type="checkbox" value="Tablet" id="form-field-field_13d5856-1" name="form_fields[field_13d5856][]"> <label for="form-field-field_13d5856-1">Tablet</label></span><span class="elementor-field-option"><input type="checkbox" value="Computador" id="form-field-field_13d5856-2" name="form_fields[field_13d5856][]"> <label for="form-field-field_13d5856-2">Computador</label></span><span class="elementor-field-option"><input type="checkbox" value="Notebook" id="form-field-field_13d5856-3" name="form_fields[field_13d5856][]"> <label for="form-field-field_13d5856-3">Notebook</label></span></div>				</div>
+								<div class="elementor-field-type-time elementor-field-group elementor-column elementor-field-group-field_47aeab0 elementor-col-70">
+												<label for="form-field-field_47aeab0" class="elementor-field-label">
+								Quantas horas por semana você tem disponível?							</label>
+								<input type="time" name="form_fields[field_47aeab0]" id="form-field-field_47aeab0" class="elementor-field elementor-size-sm  elementor-field-textual elementor-time-field">
+						</div>
+								<div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
+					<button type="submit" class="elementor-button elementor-size-sm" id="botaoEscondido">
+						<span >
+															<span class="elementor-button-icon">
+																										</span>
+																						<span class="elementor-button-text">Send</span>
+													</span>
+					</button>
+				</div>
+			</div>
+		</form>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-fccb117 elementor-widget elementor-widget-html" data-id="fccb117" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			
+<div>
+        <form method="POST" action="https://immersioltda49907.activehosted.com/proc.php" id="form_92"> <!-- mudar aqui a url do active para onde vc envia as info -->
+            <input type="hidden" name="u" value="218" /> <!-- mudar aqui o value -->
+            <input type="hidden" name="f" value="218" /> <!-- mudar aqui o value -->
+            <input type="hidden" name="s" />
+            <input type="hidden" name="c" value="0" />
+            <input type="hidden" name="m" value="0" /> 
+            <input type="hidden" name="act" value="sub" />
+            <input type="hidden" name="v" value="2" /> 
+            <input type="hidden" name="or" value="8a0389a686aa71f19fc421da16418fe9" /> <!-- mudar aqui o value -->
+
+           
+            <div class="active-form">
+                 <!-- começo do campo de nome -->
+                <div class="form-block">
+                    <input type="text" name="fullname" id="fullname" data-name="fullname"
+                        placeholder="Digite seu nome" required>
+                </div>
+                <!-- fim do campo de nome -->
+
+                <!-- começo do campo de email -->
+                <div class="form-block emailform">
+                    <input type="email" name="email" id="email" data-name="email" placeholder="Digite seu e-mail"
+                        required>
+                </div>
+                <!-- fim do campo de email →
+                
+                <!-- começo do campo de telefone -->
+                <div class="_form_element _x76139787 _full_width">
+                    <input type="text" name="phone" id="phone" data-name="phone" placeholder="Digite seu telefone com DDD"
+                        required>
+                </div>
+
+	<!-- começo do campo de armazenamento do funil -->
+                <input type="hidden" id="field[15]" name="field[15]" value="funilDIG"/> <!-- mudar aqui o value para funil A -->
+
+                <!-- final do campo de armazenamento do funil -->
+
+                <!-- começo do botão -->
+                <div class="form-block">
+                    <button>ENVIAR</button>
+                </div>
+                <!-- final do botão -->
+
+                <!-- campos de UTM -->
+                <input type="hidden" name="field[188]" id="utm_campaign" value="">
+                <input type="hidden" name="field[187]" id="utm_medium" value="">
+                <input type="hidden" name="field[186]" id="utm_source" value="">
+                <input type="hidden" name="field[190]" id="utm_term" value="">
+                <input type="hidden" name="field[189]" id="utm_content" value="">
+                <input type="hidden" name="field[191]" id="gclid_field" value="">
+                <!-- campos de UTM -->
+
+            </div>
+        </form>
+</div>
+
+ <!-- estilização -->
+    <style>
+        form * {
+            box-sizing: border-box;
+            font-family: Montserrat, Sans-serif;
+        }
+
+        .active-form {
+            /* background: white; */
+            position: relative;
+            width: 100%;
+        }
+
+        .active-form input[type='text'],
+        .active-form input[type='email'] {
+            margin: 2px 0; /* ESPAÇAMENTO EM VOLTA DO CAMPO */
+            background: white;
+            font-size: 16px;
+            color: #757575;
+            font-weight: 400;
+            width: 100%;
+            border: 1px solid rgb(0, 0, 0);
+            padding: 12px 18px;
+            vertical-align: middle;
+            line-height: 1.4;
+            min-height: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 0 3px rgb(0 0 0 / 5%);
+        }
+
+        .active-form input::placeholder {
+            color: #757575;
+            background-color: #fff;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        .form-block button {
+            background: #61CE70; /* COR DO BOTÃO */
+            border: none;
+            cursor: pointer;
+            border-radius: 5px; /* ARREDONDAMENTO DO BOTÃO */
+            color: rgb(255, 255, 255); /* COR DO TEXTO */
+            margin: 10px auto; /* ESPAÇAMENTO EM VOLTA DO BOTÃO */
+            display: block;
+            padding: 20px 40px;
+            text-transform: uppercase;
+            width: 100%;
+            font-weight: 900;
+            font-size: 18px;
+        }
+    </style>
+
+<!-- SCRIPT RESPONSÁVEL POR PEGAR AS UTM'S E JOGAR NO ACTIVE -->
+<script>
+    window.addEventListener('load', function () {
+        const queryStringCapt = window.location.search;
+        const urlParamsCapt = new URLSearchParams(queryStringCapt);
+        const utm_campaign_capt = urlParamsCapt.get("utm_campaign");
+        const utm_medium_capt = urlParamsCapt.get("utm_medium");
+        const utm_source_capt = urlParamsCapt.get("utm_source");
+        const utm_content_capt = urlParamsCapt.get("utm_content");
+        const utm_term_capt = urlParamsCapt.get("utm_term");
+        const glic_id = urlParamsCapt.get("gclid");
+        
+        document.getElementById("utm_campaign").value=utm_campaign_capt;
+        document.getElementById("utm_medium").value=utm_medium_capt;
+        document.getElementById("utm_source").value=utm_source_capt;
+        document.getElementById("utm_content").value=utm_content_capt;
+        document.getElementById("utm_term").value=utm_term_capt;
+        document.getElementById("gclid_field").value=glic_id;
+    })
+    
+</script>
+		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-2902b966 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2902b966" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-682fb4ba" data-id="682fb4ba" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<section class="elementor-section elementor-inner-section elementor-element elementor-element-1a084e29 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1a084e29" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-7410af74" data-id="7410af74" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-58a2c8d4 elementor-widget elementor-widget-image" data-id="58a2c8d4" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="800" height="450" src="https://avaliadordemidias.com/wp-content/webp-express/webp-images/uploads/2023/01/logos-e-fundos-para-paginas-25-1024x576.png.webp" class="attachment-large size-large wp-image-1091" alt="" srcset="https://avaliadordemidias.com/wp-content/webp-express/webp-images/uploads/2023/01/logos-e-fundos-para-paginas-25-1024x576.png.webp 1024w,  https://avaliadordemidias.com/wp-content/webp-express/webp-images/uploads/2023/01/logos-e-fundos-para-paginas-25-300x169.png.webp 300w,  https://avaliadordemidias.com/wp-content/webp-express/webp-images/uploads/2023/01/logos-e-fundos-para-paginas-25-768x432.png.webp 768w,  https://avaliadordemidias.com/wp-content/webp-express/webp-images/uploads/2023/01/logos-e-fundos-para-paginas-25-1536x864.png.webp 1536w,  https://avaliadordemidias.com/wp-content/webp-express/webp-images/uploads/2023/01/logos-e-fundos-para-paginas-25.png.webp 1920w" sizes="(max-width: 800px) 100vw, 800px" />															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-3555aebd" data-id="3555aebd" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-18bba9b7 elementor-align-center elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="18bba9b7" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://avaliadordemidias.com/politicas/" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">Politicas de Privacidade</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-5eaed0ab elementor-align-center elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="5eaed0ab" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://avaliadordemidias.com/termos/" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">Termos de Uso</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-47eaf568" data-id="47eaf568" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-bbe14fa elementor-widget elementor-widget-image" data-id="bbe14fa" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="800" height="241" src="https://avaliadordemidias.com/wp-content/webp-express/webp-images/uploads/2023/01/logos-e-fundos-para-paginas-28-e1673894974406-1024x309.png.webp" class="attachment-large size-large wp-image-1089" alt="" srcset="https://avaliadordemidias.com/wp-content/webp-express/webp-images/uploads/2023/01/logos-e-fundos-para-paginas-28-e1673894974406-1024x309.png.webp 1024w,  https://avaliadordemidias.com/wp-content/webp-express/webp-images/uploads/2023/01/logos-e-fundos-para-paginas-28-e1673894974406-300x91.png.webp 300w,  https://avaliadordemidias.com/wp-content/webp-express/webp-images/uploads/2023/01/logos-e-fundos-para-paginas-28-e1673894974406-768x232.png.webp 768w,  https://avaliadordemidias.com/wp-content/webp-express/webp-images/uploads/2023/01/logos-e-fundos-para-paginas-28-e1673894974406-1536x464.png.webp 1536w,  https://avaliadordemidias.com/wp-content/webp-express/webp-images/uploads/2023/01/logos-e-fundos-para-paginas-28-e1673894974406.png.webp 1920w" sizes="(max-width: 800px) 100vw, 800px" />															</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+					</div>
+		</div>
+							</div>
+		</section>
+							</div>
+		
+<meta http-equiv="delegate-ch" content="sec-ch-ua https://unatorpodules.com; sec-ch-ua-mobile https://unatorpodules.com; sec-ch-ua-arch https://unatorpodules.com; sec-ch-ua-model https://unatorpodules.com; sec-ch-ua-platform https://unatorpodules.com; sec-ch-ua-platform-version https://unatorpodules.com; sec-ch-ua-bitness https://unatorpodules.com; sec-ch-ua-full-version-list https://unatorpodules.com; sec-ch-ua-full-version https://unatorpodules.com"><style>.dtpcnt{opacity: 0;}</style>
+<script>
+    (function(b,c,l,q,r,e,t,y,d,m,u,z,a,n,g,f,p,v,h,w){function x(){for(var a=c.querySelectorAll(".dtpcnt"),b=0,d=a.length;b<d;b++)a[b][t]=a[b][t].replace(/(^|\s+)dtpcnt($|\s+)/g,"")}w="https:"===b.location.protocol?"secure; ":"";b[d]||(b[d]=function(){(b[d].q=b[d].q||[]).push(arguments)},g=c[q],c[q]=function(){g&&g.apply(this,arguments);if(b[d]&&!b[d].hasOwnProperty("params")&&/loaded|interactive|complete/.test(c.readyState))for(;a=c[r][m++];)/\/?click\/?($|(\/[0-9]+)?$)/.test(a.pathname)&&(a[e]="javascrip"+
+b.postMessage.toString().slice(4,5)+":"+d+'.l="'+a[e]+'",void 0')},setTimeout(function(){(p=/[?&]cpid(=([^&#]*)|&|#|$)/.exec(b.location.href))&&p[2]&&(f=p[2],v=c.cookie.match(new RegExp("(^| )vl-"+f+"=([^;]+)")));var d=c.cookie.match(/(^| )vl-cep=([^;]+)/),k=location[e];if("savedCep"===z&&d&&(!f||"undefined"===typeof f)&&0>k.indexOf("cep=")){var g=-1<k.indexOf("?")?"&":"?";k+=g+d.pop()}a=c.createElement("script");n=c.scripts[0];a.defer=1;a.src=u+(-1===u.indexOf("?")?"?":"&")+"lpref="+l(c.referrer)+
+"&lpurl="+l(k)+"&lpt="+l(c.title)+"&vtm="+(new Date).getTime()+(v?"&uw=no":"");a[y]=function(){for(m=0;a=c[r][m++];)/dtpCallback\.l/.test(a[e])&&(a[e]=decodeURIComponent(a[e]).match(/dtpCallback\.l="([^"]+)/)[1]);x()};n.parentNode.insertBefore(a,n);f&&(h=new Date,h.setTime(h.getTime()+864E5),c.cookie="vl-"+f+"=1; "+w+"samesite=Strict; expires="+h.toGMTString()+"; path=/")},0),setTimeout(x,7E3))})(window,document,encodeURIComponent,"onreadystatechange","links","href","className","onerror","dtpCallback",
+0,"https://unatorpodules.com/d/.js","savedCep");
+</script>
+<noscript><link href="https://unatorpodules.com/d/.js?noscript=true&lpurl=" rel="stylesheet"/></noscript>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PTW7MZZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<script>
+    (function () {
+    const parametros = ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content"]
+    r = new URL(window.top.location.href);
+    let scks = []
+    let utms = {}
+    parametros.forEach((el => {
+        if (el.includes("source")) {
+            scks[scks.length] = r.searchParams.get(el) ? r.searchParams.get(el) : (document.referrer ? new URL(document.referrer).hostname : "direto")
+            utms[el] = r.searchParams.get(el) ? r.searchParams.get(el) : (document.referrer ? new URL(document.referrer).hostname : "direto")
+        }
+        else {
+            scks[scks.length] = r.searchParams.get(el) ? r.searchParams.get(el) : ""
+            utms[el] = r.searchParams.get(el) ? r.searchParams.get(el) : ""
+        }
+    }))
+    scks = scks.filter(function (el) {
+        return el != "";
+    });
+    let sck = "sck=" + scks.join('|')
+    let href = ""
+    for (el in utms) {
+        utms[el] ? href += el + "=" + utms[el] + "&" : ""
+    }
+    href += sck
+    document.querySelectorAll('a').forEach(el => {
+        if (!el.href.includes("#")) {
+            el.href.includes("?") ? el.href += "&" + href : el.href += "?" + href
+        }
+    })
+})();
+</script>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BFTWVT"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<link rel='stylesheet' id='flatpickr-css' href='https://avaliadordemidias.com/wp-content/plugins/elementor/assets/lib/flatpickr/flatpickr.min.css?ver=4.1.4' media='all' />
+<link rel='stylesheet' id='e-animations-css' href='https://avaliadordemidias.com/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.9.1' media='all' />
+<script id='rocket-browser-checker-js-after'>
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script id='rocket-preload-links-js-extra'>
+var RocketPreloadLinksConfig = {"excludeUris":"\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index\\.php\/)?wp\\-json(\/.*|$)|\/wp-admin\/|\/logout\/|\/wp-login.php|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/avaliadordemidias.com","onHoverDelay":"100","rateThrottle":"3"};
+</script>
+<script id='rocket-preload-links-js-after'>
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script src='https://avaliadordemidias.com/wp-content/themes/hello-elementor/assets/js/hello-frontend.min.js?ver=1.0.0' id='hello-theme-frontend-js'></script>
+<script id='eael-general-js-extra'>
+var localize = {"ajaxurl":"https:\/\/avaliadordemidias.com\/wp-admin\/admin-ajax.php","nonce":"82a01b17db","i18n":{"added":"Added ","compare":"Compare","loading":"Loading..."},"page_permalink":"https:\/\/avaliadordemidias.com\/p2\/","cart_redirectition":"","cart_page_url":"","el_breakpoints":{"mobile":{"label":"Mobile","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Extra","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Extra","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}};
+</script>
+<script src='https://avaliadordemidias.com/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/js/view/general.min.js?ver=5.5.2' id='eael-general-js'></script>
+<script src='https://avaliadordemidias.com/wp-content/plugins/elementor/assets/lib/flatpickr/flatpickr.min.js?ver=4.1.4' id='flatpickr-js'></script>
+<script src='https://avaliadordemidias.com/wp-content/plugins/pro-elements/assets/js/webpack-pro.runtime.min.js?ver=3.8.0' id='elementor-pro-webpack-runtime-js'></script>
+<script src='https://avaliadordemidias.com/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.9.1' id='elementor-webpack-runtime-js'></script>
+<script src='https://avaliadordemidias.com/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.9.1' id='elementor-frontend-modules-js'></script>
+<script src='https://avaliadordemidias.com/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2' id='wp-polyfill-inert-js'></script>
+<script src='https://avaliadordemidias.com/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.11' id='regenerator-runtime-js'></script>
+<script src='https://avaliadordemidias.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
+<script src='https://avaliadordemidias.com/wp-includes/js/dist/hooks.min.js?ver=4169d3cf8e8d95a3d6d5' id='wp-hooks-js'></script>
+<script src='https://avaliadordemidias.com/wp-includes/js/dist/i18n.min.js?ver=9e794f35a71bb98672ae' id='wp-i18n-js'></script>
+<script id='wp-i18n-js-after'>
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script id='elementor-pro-frontend-js-before'>
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/avaliadordemidias.com\/wp-admin\/admin-ajax.php","nonce":"3cc94df6d1","urls":{"assets":"https:\/\/avaliadordemidias.com\/wp-content\/plugins\/pro-elements\/assets\/","rest":"https:\/\/avaliadordemidias.com\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/avaliadordemidias.com\/wp-content\/plugins\/pro-elements\/modules\/lottie\/assets\/animations\/default.json"}};
+</script>
+<script src='https://avaliadordemidias.com/wp-content/plugins/pro-elements/assets/js/frontend.min.js?ver=3.8.0' id='elementor-pro-frontend-js'></script>
+<script src='https://avaliadordemidias.com/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2' id='elementor-waypoints-js'></script>
+<script src='https://avaliadordemidias.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2' id='jquery-ui-core-js'></script>
+<script id='elementor-frontend-js-before'>
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Extra","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Extra","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.9.1","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"e_optimized_assets_loading":true,"e_optimized_css_loading":true,"a11y_improvements":true,"additional_custom_breakpoints":true,"e_import_export":true,"e_hidden_wordpress_widgets":true,"theme_builder_v2":true,"hello-theme-header-footer":true,"landing-pages":true,"elements-color-picker":true,"favorite-widgets":true,"admin-top-bar":true,"kit-elements-defaults":true,"page-transitions":true,"notes":true,"form-submissions":true,"e_scroll_snap":true},"urls":{"assets":"https:\/\/avaliadordemidias.com\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","hello_header_logo_type":"title","hello_footer_logo_type":"logo"},"post":{"id":54,"title":"Avaliador%20de%20M%C3%ADdias%20P2%20%E2%80%93%20Mais%20conecta","excerpt":"","featuredImage":false}};
+</script>
+<script src='https://avaliadordemidias.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.9.1' id='elementor-frontend-js'></script>
+<script src='https://avaliadordemidias.com/wp-content/plugins/pro-elements/assets/js/elements-handlers.min.js?ver=3.8.0' id='pro-elements-handlers-js'></script>
+	</body>
+</html>
